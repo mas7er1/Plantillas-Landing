@@ -1,0 +1,91 @@
+section#projects(style="background-color:#fff;")
+    .container
+        .row.justify-content-center
+            .col-lg-8
+                .al-heading.text-center
+                    h2.al-heading__title Projects We Done
+                    p.al-heading__description Tristique velit phasellus sed auctor leo eros luctus nibh fermentum, ad imperdiet rhoncus dolorhabitant purus velit aliquet donecurna ut in turpis
+            .al-portfolio-navigation
+                ul#al-control-portfolio
+                    li.active(data-filter="*") All
+                    li(data-filter=".al-filter-marketing") Marketing
+                    li(data-filter=".al-filter-startup") Startup
+                    li(data-filter=".al-filter-invesment") Invesment
+                    li(data-filter=".al-filter-event") Event
+                    li(data-filter=".al-filter-branding") Branding
+        .al-portfolio-layout-boxed
+            .al-masonry-posts(data-size="3")
+                .gutter-sizer
+                article.al-filter-marketing
+                    a(href="#image-modal" target="_blank" data-toggle="modal" class="image-modal")
+                        .item-wrap.dh-container
+                            .post-thumb
+                                img(src="images/portfolio/pr1.jpg" alt="")
+                            .content.dh-overlay
+                                .tizer-circle
+                                    i.fa.fa-picture-o
+                                .content-wrap
+                                    .content-va
+                                        h2 Startup
+                                        p Awesome Project
+                article.al-gallery-portfolio.al-filter-startup
+                    a(href="#galerry-modal" target="_blank" data-toggle="modal" class="image-modal")
+                        .item-wrap.dh-container
+                            .post-thumb
+                                img(src="images/portfolio/pr2.jpg" alt="")
+                            .content.dh-overlay
+                                .tizer-circle
+                                    i.fa.fa-sliders
+                                .content-wrap
+                                    .content-va
+                                        h2 Gallery Images
+                                        p Gallery Modal
+                article.al-filter-startup.al-filter-invesment
+                    a(href="#video-modal" target="_blank" data-toggle="modal" class="image-modal")
+                        .item-wrap.dh-container
+                            .post-thumb
+                                img(src="images/portfolio/pr3.jpg" alt="")
+                            .content.dh-overlay
+                                .tizer-circle
+                                    i.fa.fa-video-camera
+                                .content-wrap
+                                    .content-va
+                                        h2 Video Single
+                                        p Video Single
+                article.al-gallery-portfolio.al-filter-event.al-filter-invesment
+                    a(href="#video-gallery-modal" target="_blank" data-toggle="modal" class="image-modal")
+                        .item-wrap.dh-container
+                            .post-thumb
+                                img(src="images/portfolio/pr4.jpg" alt="")
+                            .content.dh-overlay
+                                .tizer-circle
+                                    i.fa.fa-video-camera
+                                .content-wrap
+                                    .content-va
+                                        h2 Video Gallery
+                                        p Video Single
+                article.al-filter-branding
+                    a(href="#image-modal-1" target="_blank" data-toggle="modal" class="image-modal")
+                        .item-wrap.dh-container
+                            .post-thumb
+                                img(src="images/portfolio/pr5.jpg" alt="")
+                            .content.dh-overlay
+                                .tizer-circle
+                                    i.fa.fa-picture-o
+                                .content-wrap
+                                    .content-va
+                                        h2 Startup
+                                        p Awesome Project
+                article.al-filter-marketing
+                    a(href="#image-modal-2" target="_blank" data-toggle="modal" class="image-modal")
+                        .item-wrap.dh-container
+                            .post-thumb
+                                img(src="images/portfolio/pr6.jpg" alt="")
+                            .content.dh-overlay
+                                .tizer-circle
+                                    i.fa.fa-picture-o
+                                .content-wrap
+                                    .content-va
+                                        h2 Bitcoin
+                                        p Awesome Project
+include _portfolio-modals.pug

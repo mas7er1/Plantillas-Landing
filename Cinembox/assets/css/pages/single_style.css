@@ -1,0 +1,135 @@
+/**  01.  breadcrumb area **/
+
+.cc-breadcrumb {
+    display: block;
+    padding-bottom: 150px;
+}
+
+.cc-breadcrumb .breadcrumb-img {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+.cc-breadcrumb .breadcrumb-title h3 {
+    text-align: center;
+    padding: 130px 0;
+}
+
+/**  01.  end breadcrumb area **/
+
+
+/**  02.  singal area **/
+
+.singal-discription {
+    margin: 20px 0 0 0;
+}
+
+.singal-discription h4 {
+    margin: 20px 0;
+}
+
+.singal-discription .btn {
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: inherit;
+    padding: 20px 0;
+    text-decoration: underline;
+}
+
+.singal-image-2{
+    margin-top: 50px;
+}
+
+/**  02.  end singal area **/
+
+
+/**  03.  blog review area **/
+
+.cc-blog-review-area{
+    margin-bottom: 150px;
+}
+
+.blog-review-discription {
+    background-color: #222;
+	padding: 50px;
+	text-align: center;
+}
+
+/**  03.  end blog review area **/
+
+
+/**  04.  comment area **/
+
+.cc-comment-area{
+    margin-bottom: 150px;
+}
+
+.comment-title{
+    margin-bottom: 20px;
+}
+.comment-section{
+    display: flex;
+}
+
+.comment-img {
+	border-radius: 40px;
+	background-color: #fff;
+	width: 111px;
+	height: 70px;
+	margin: 50px;
+}
+
+.comment-discript{
+    margin-top: 45px;
+}
+
+.comment-discript p{
+    margin: 10px 0;
+}
+
+/**  04.  end comment area **/
+
+
+/**  05.  comment form area **/
+
+.cc-comment-form-area{
+    margin-bottom: 150px;
+}
+
+.comment-form-section p{
+    margin: 20px 0;
+}
+
+.comment-form-section input {
+	height: 47px;
+	width: 100%;
+	background: transparent;
+	border: 1px solid #fff;
+	color: #666666;
+	margin-bottom: 15px;
+	padding-left: 20px;
+}
+
+.comment-form-section textarea {
+	height: 200px;
+	width: 100%;
+	background: transparent;
+	border: 1px solid #fff;
+	color: #666666;
+	margin-bottom: 15px;
+	padding: 20px 20px;
+}
+
+.comment-form-section .cc-btn {
+	text-transform: uppercase;
+	color: #000;
+	border: 1px solid #000;
+	border-radius: inherit;
+	padding: 15px 70px;
+	background-color: #fff;
+}
+
+/**  05.  end comment form area **/

@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>TishAstrology3HTML - Astrology HTML Template</title>
+
+        <!-- Font-Awesome ================================================== -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+
+        <style>
+          .css3-spinner {
+            background-color: #131722;
+          }
+
+          /* Loading Effect */
+            .loading-container {
+              display: none;
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: white;
+              z-index: 9999;
+            }
+
+            .loading {
+              width: 128px;
+              height: 128px;
+              background-image: url('./assets/logo.png');
+              background-size: cover;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              animation: fadeInOut 2s linear infinite;
+            }
+
+            @keyframes fadeInOut {
+              0% { opacity: 0.1; }
+              50% { opacity: 1; }
+              100% { opacity: 0.1; }
+            }
+          </style>
+    </head>
+    <body>    
+        <div id="loadingAnimation" class="loading-container">
+          <div class="loading"></div>
+        </div>
+
+
+        <div id="header-sticky" class="bg-12 mobile-menu">
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-2 col-lg-2 col-md-2 col-sm-8">
+                  <div class="logo">
+                     <a href="#">
+                     <img src="./assets/logo.png" alt="" />
+                     </a>
+                  </div>
+               </div>
+               <div class="col-xl-10 col-lg-10 col-md-10 col-sm-4">
+                  <div class="wrap_nav mainmenu text-center">
+                     <ul id="nav-12">
+                        <li>
+                           <a href="#">Home</a>
+                        </li>
+                        <li>
+                           <a href="#services">Services</a>
+                           <ul class="sub-menu">
+                              <li><a href="#services">Service 1</a></li>
+                              <li><a href="#services">Service 2</a></li>
+                              <li><a href="#services">Service 3</a></li>
+                           </ul>
+                        </li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div> 
+
+              
+        <div class="slider-area">
+         <div class="slider-active">
+            <div class="slider-wrapper vh d-flex" style="background-image:url(./assets/slide1.jpg)">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="myphoto">
+                           <img src="./assets/hero-image.png" alt="Astrology Guide">
+                        </div>
+                        <h1>Astrological Journey</h1>
+                        <h3 id="personal">
+                           <span class="typewriter-wrapper">
+                           <span id="2sRCVJ3sE" class="typewriter-char typewriter-item-0">Z</span>
+                           <span id="PIYMVDjg5" class="typewriter-char typewriter-item-1">o</span>
+                           <span id="9LopKcXqkCBA" class="typewriter-char typewriter-item-2">d</span>
+                           <span id="3JkHVyLo" class="typewriter-char typewriter-item-3">i</span>
+                           <span id="4MpVXaZb" class="typewriter-char typewriter-item-4">a</span>
+                           <span id="5ZtGCIlb" class="typewriter-char typewriter-item-5">c</span>
+                           </span><span class="typewriter-cursor" style="opacity: 0.3;">|</span>
+                        </h3>
+                        <input id="personal-text1" type="hidden" value="Astrology Enthusiast" />
+                        <input id="personal-text2" type="hidden" value="Star Guide" />
+                        <input id="personal-text3" type="hidden" value="Cosmic Explorer" />
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+
+<div class="heading-tittle-area mb-5">
+        <div class="heading-tittle-warp">
+          <div class="heading-tittle-seven">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="heading-tittle">
+                    <span class="sub-tittle">Astrology Insights</span>
+                    <h2>Explore the Universe with <span>Astrology</span></h2>                   
+                  </div>
+                </div>
+              </div>  
+            </div>  
+          </div>  
+        </div>  
+      </div>
+
+
+<section class="css-section">
+      <div class="container text-center">
+        <h2 class="css-title" id="services">Discover Our Astrological Services</h2>
+        <p class="css-description margin-bottom-60">Dive deep into the mysteries of the cosmos and uncover the secrets of your stars.</p>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="css-col type-11">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <h2>Natal Chart Readings</h2>
+              <p>Unlock the insights of your birth chart for a deep dive into your personality, potential, and life path.</p>
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="css-col type-11">
+              <i class="fa fa-moon-o" aria-hidden="true"></i>
+              <h2>Moon Phase Guidance</h2>
+              <p>Explore how the current moon phase can influence your emotions, behaviors, and important life decisions.</p>
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="css-col type-11">
+              <i class="fa fa-sun-o" aria-hidden="true"></i>
+              <h2>Sun Sign Insights</h2>
+              <p>Gain clarity on how your Sun sign shapes your identity, vitality, and life's purpose.</p>
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+<div class="parallax-container">
+  <div id="parallax-background" style="background-image: url('./assets/parallax-bg.jpg');"></div>
+  <div class="parallax-content">
+    <h1>Discover Your Cosmic Connection</h1>
+    <p>Embark on an astrological journey to unlock the secrets of the stars and your place in the universe.</p>
+  </div>
+</div>
+
+
+
+
+<div class="heading-tittle-area">
+        <div class="heading-tittle-warp">
+          <div class="heading-tittle-seven">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="heading-tittle">
+                    <h2 id="testimonials">Customers <span>Feedback</span></h2>                   
+                  </div>
+                </div>
+              </div>  
+            </div>  
+          </div>  
+        </div>  
+      </div>
+<div class="container">
+    <div class="tishonator-1 tishonator-blue owl-carousel theme1-slider tshnt-tstm-equalheight">
+      <div class="tishonator-col">
+        <div class="tishonator-wrapper">
+          <div class="tishonator-color-bg"></div>
+          <div class="tishonator-avatar">
+            <img src="./assets/testim1.jpg" class="img-responsive" alt="Astrology Consultation">
+          </div>
+          <div class="tishonator-details">
+            <div class="tshnt-tstm-name">Mia Zhang</div>
+            <div class="tshnt-tstm-designation"> - Astrology Consultant </div>
+            <div class="tshnt-tstm-rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <hr>
+            <div class="tshnt-tstm-testimonial-title">Insightful and Transformative Readings</div>
+            <div class="tshnt-tstm-message">
+              <i class="fa fa-quote-left"></i> 
+              Mia's readings provided profound insights into my life's path, helping me navigate through challenging times with grace and clarity.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tishonator-col">
+        <div class="tishonator-wrapper">
+          <div class="tishonator-color-bg"></div>
+          <div class="tishonator-avatar">
+            <img src="./assets/testim2.jpg" class="img-responsive" alt="Astrology Guidance">
+          </div>
+          <div class="tishonator-details">
+            <div class="tshnt-tstm-name">Lucas Martinez</div>
+            <div class="tshnt-tstm-designation"> - Cosmic Life Coach </div>
+            <div class="tshnt-tstm-rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <hr>
+            <div class="tshnt-tstm-testimonial-title">Empowering Life Changes</div>
+            <div class="tshnt-tstm-message">
+              <i class="fa fa-quote-left"></i> 
+              Lucas' guidance has been transformative, empowering me to make life changes aligned with my true self and cosmic path.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tishonator-col">
+        <div class="tishonator-wrapper">
+          <div class="tishonator-color-bg"></div>
+          <div class="tishonator-avatar">
+            <img src="./assets/testim3.jpg" class="img-responsive" alt="Astrological Forecasting">
+          </div>
+          <div class="tishonator-details">
+            <div class="tshnt-tstm-name">Sophie Nguyen</div>
+            <div class="tshnt-tstm-designation"> - Astrological Forecaster </div>
+            <div class="tshnt-tstm-rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <hr>
+            <div class="tshnt-tstm-testimonial-title">Accurate and Enlightening Forecasts</div>
+            <div class="tshnt-tstm-message">
+              <i class="fa fa-quote-left"></i> 
+              Sophie's forecasts have been incredibly accurate, providing me with clarity and guidance for future planning and personal growth.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="image-card-area">
+          <div class="image-card-warp">
+            <div class="image-card-one">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6 col-sm-12">
+                    <div class="image-card-wrapper mb-30">
+                      <div class="image-card-img">
+                        <a href="#"><img src="./assets/hero-image.png" alt="Astrology Insights"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-12">
+                    <div class="image-card-wrapper mb-30">
+                      <div class="image-card-text">
+                        <h4><a href="#">Unlocking the Mysteries of Your Birth Chart</a></h4>
+                        <p>Explore the profound insights your birth chart holds about your personality, destiny, and the unique cosmic forces at play in your life. Understand how planetary alignments at the time of your birth influence your path and how you can harness this knowledge for personal growth.</p>
+                        <a href="#">Continue Reading</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>  
+            </div>  
+          </div>  
+        </div>
+
+
+
+<div class="images-area images-bg">
+  <div class="heading-tittle-area">
+        <div class="heading-tittle-warp">
+          <div class="heading-tittle-seven">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="heading-tittle">
+                    <h2 id="gallery">Our <span>Astrology</span> Gallery</h2>                   
+                  </div>
+                </div>
+              </div>  
+            </div>  
+          </div>  
+        </div>  
+      </div>
+        <div class="images-warp">
+          <div class="images-eight">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-md-4 col-sm-6 mb-4">
+                  <a href="./assets/slide1.jpg" class="simple-lightbox">
+                    <img src="./assets/slide1.jpg" class="img-fluid" alt="Gallery Thumb 1">
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                  <a href="./assets/slide2.jpg" class="simple-lightbox">
+                    <img src="./assets/slide2.jpg" class="img-fluid" alt="Gallery Thumb 2">
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                  <a href="./assets/slide3.jpg" class="simple-lightbox">
+                    <img src="./assets/slide3.jpg" class="img-fluid" alt="Gallery Thumb 3">
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                  <a href="./assets/slide4.jpg" class="simple-lightbox">
+                    <img src="./assets/slide4.jpg" class="img-fluid" alt="Gallery Thumb 4">
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                  <a href="./assets/slide5.jpg" class="simple-lightbox">
+                    <img src="./assets/slide5.jpg" class="img-fluid" alt="Gallery Thumb 5">
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                  <a href="./assets/slide6.jpg" class="simple-lightbox">
+                    <img src="./assets/slide6.jpg" class="img-fluid" alt="Gallery Thumb 6">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>  
+      </div>
+
+
+<section class="team-section style-7">
+  <div class="heading-tittle-area">
+        <div class="heading-tittle-warp">
+          <div class="heading-tittle-seven">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="heading-tittle">
+                    <h2 id="team">Our <span>Astrologers</span></h2>                   
+                  </div>
+                </div>
+              </div>  
+            </div>  
+          </div>  
+        </div>  
+      </div>
+    <div class="our-team">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="team-member">
+                        <div class="member-pic">
+                            <img src="./assets/team1.jpg" alt="Astrologer Profile Image"><!-- photo of a member -->
+                        </div>
+                        <div class="social">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="member-data">
+                            <div class="name">
+                                <h6>Lead Astrologer</h6>
+                                <h4>Ashley Tulaba</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="team-member">
+                        <div class="member-pic">
+                            <img src="./assets/team2.jpg" alt="Tarot Reader Profile Image"><!-- photo of a member -->
+                        </div>
+                        <div class="social">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="member-data">
+                            <div class="name">
+                                <h6>Tarot Reader</h6>
+                                <h4>Alica Train</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="team-member">
+                        <div class="member-pic">
+                            <img src="./assets/team3.jpg" alt="Numerologist Profile Image"><!-- photo of a member -->
+                        </div>
+                        <div class="social">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="member-data">
+                            <div class="name">
+                                <h6>Numerologist</h6>
+                                <h4>Claudia Ashworth</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="team-member">
+                        <div class="member-pic">
+                            <img src="./assets/team4.jpg" alt="Astrological Consultant Profile Image"><!-- photo of a member -->
+                        </div>
+                        <div class="social">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="member-data">
+                            <div class="name">
+                                <h6>Astrological Consultant</h6>
+                                <h4>Jasmine Colvin</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="call-out-area call-bg-ten">
+        <div class="call-out-warp">
+          <div class="container">
+            <div class="call-out-ten">            
+              <div class="row">
+                <div class="col-md-9">
+                  <div class="call-out-tittle">
+                    <h2>Explore the Cosmos and Enhance Your Astrological Insight</h2>
+                    <p>Embark on an astrological journey to discover the secrets of the stars and how they influence your life path and destiny. Uncover the cosmic guidance waiting for you.</p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="call-out-btn">
+                    <a href="#">View Astrology Details</a>
+                  </div>
+                </div>  
+              </div>  
+            </div>  
+          </div>  
+        </div>  
+      </div>
+
+<section class="sec-spacer">
+        <div class="heading-tittle-area">
+        <div class="heading-tittle-warp">
+          <div class="heading-tittle-seven">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="heading-tittle">
+                    <h2 id="projects">Our <span>Astrology</span> Projects</h2>                   
+                  </div>
+                </div>
+              </div>  
+            </div>  
+          </div>  
+        </div>  
+      </div>
+        <div class="container container-center">
+          <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="tc-image-effect8">
+                <img src="./assets/slide1.jpg" alt="Astrological Signs">
+                <div class="caption">
+                  <h3>Unlock Your Zodiac Secrets</h3>
+                  <p>Delve into the meanings behind your astrological sign and how it shapes your personality and future.</p>
+                </div>
+                <div class="link-wrap">
+                  <a href="#1"><i class="fa fa-search"></i></a>
+                  <a href="#1"><i class="fa fa-link"></i></a>
+                </div>
+              </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="tc-image-effect8">
+                <img src="./assets/slide2.jpg" alt="Planetary Movements">
+                <div class="caption">
+                  <h3>Planetary Transits &amp; You</h3>
+                  <p>Understand how the current planetary movements affect your life and harness these energies for your benefit.</p>
+                </div>
+                <div class="link-wrap">
+                  <a href="#1"><i class="fa fa-search"></i></a>
+                  <a href="#1"><i class="fa fa-link"></i></a>
+                </div>
+              </div>
+              </div>
+              <div class="col-md-4 col-sm-6 hidden-sm">
+                <div class="tc-image-effect8">
+                <img src="./assets/slide3.jpg" alt="Moon Phases">
+                <div class="caption">
+                  <h3>Moon Phases & Emotional Wellbeing</h3>
+                  <p>Explore the impact of the moon's phases on your emotional and spiritual wellbeing and how to align with them.</p>
+                </div>
+                <div class="link-wrap">
+                  <a href="#1"><i class="fa fa-search"></i></a>
+                  <a href="#1"><i class="fa fa-link"></i></a>
+                </div>
+              </div>
+              </div>
+          </div>      
+        </div>
+      </section>
+
+
+
+<div class="brand-area pb-60">
+        <div class="brand-area-warp">
+          <div class="brand-area-three">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="brand-active-three bg-active">
+                    <div class="brand-img">
+                      <div class="img">
+                        <img src="./assets/slide1.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div class="brand-img">
+                      <div class="img">
+                        <img src="./assets/slide2.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div class="brand-img">
+                      <div class="img">
+                        <img src="./assets/slide3.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div class="brand-img">
+                      <div class="img">
+                        <img src="./assets/slide4.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div class="brand-img">
+                      <div class="img">
+                        <img src="./assets/slide5.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div class="brand-img">
+                      <div class="img">
+                        <img src="./assets/slide6.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div class="brand-img">
+                      <div class="img">
+                        <img src="./assets/slide4.jpg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<section>     
+        <footer>
+          <div class="footer-top-area pt-80 pb-45">
+            <div class="container">
+              <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                  <div class="footer-wrapper mb-30">
+                    <h4 class="footer-text">Cosmic Contact</h4>
+                    <ul class="footer-link">
+                      <li>1 (800) STAR-123</li>
+                      <li>cosmic.insights@astro.com</li>
+                      <li>88 Celestial Pathway, Skyward</li>
+                      <li>Galaxy City, Universe</li>
+                    </ul>
+                    <div class="footer-icon">
+                      <a href="#"><i class="fa fa-facebook"></i></a>
+                      <a href="#"><i class="fa fa-twitter"></i></a>
+                      <a href="#"><i class="fa fa-google"></i></a>
+                      <a href="#"><i class="fa fa-instagram"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                  <div class="footer-wrapper mb-30">
+                    <h4 class="footer-text">Navigate the Stars</h4>
+                    <ul class="footer-menu">
+                      <li><a href="#"><i class="fa fa-caret-right"></i>Home</a></li>
+                      <li><a href="#"><i class="fa fa-caret-right"></i>About Us</a></li>
+                      <li><a href="#"><i class="fa fa-caret-right"></i>Astrology Services</a></li>
+                      <li><a href="#"><i class="fa fa-caret-right"></i>Horoscopes</a></li>
+                      <li><a href="#"><i class="fa fa-caret-right"></i>Birth Chart Readings</a></li>
+                      <li><a href="#"><i class="fa fa-caret-right"></i>Blog</a></li>
+                      <li><a href="#"><i class="fa fa-caret-right"></i>Contact</a></li>
+                      <li><a href="#"><i class="fa fa-caret-right"></i>Support</a></li>
+                      <li><a href="#"><i class="fa fa-caret-right"></i>Careers</a></li>
+                      <li><a href="#"><i class="fa fa-caret-right"></i>Privacy Policy</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                  <div class="footer-wrapper mb-30">
+                    <h4 class="footer-text">Astrology Insights</h4>
+                    <ul class="footers">
+                      <li>
+                        <div class="footer-img">
+                          <a href="#"><img src="./assets/slide1.jpg" alt="Astrology Insight" /></a>
+                        </div>
+                        <div class="footer-info">
+                          <h4><a href="#">Unlocking the Mysteries of Your Birth Chart</a></h4>
+                          <span>24th Mar 2024</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="footer-img">
+                          <a href="#"><img src="./assets/slide2.jpg" alt="Astrology Guidance" /></a>
+                        </div>
+                        <div class="footer-info">
+                          <h4><a href="#">Planetary Transits & Your Future</a></h4>
+                          <span>15th Apr 2024</span>
+                        </div>
+                      </li>
+                    </ul>                 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bootom-area pt-40 mt-40">
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <div class="copyright">
+                  <p>Copyright © 2024. All Rights Reserved to Cosmic Insights.</p>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <ul class="footer-bottom-link">
+                  <li><a href="#">Privacy Policy </a></li>
+                  <li><a href="#">Terms of Service</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Support</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer> 
+      </section>
+
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

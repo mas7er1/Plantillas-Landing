@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TishShoppingMallHTML Documentation</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="text-center my-5">TishShoppingMallHTML Documentation</h1>
+
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>This documentation will guide you through the process of setting up and customizing the TishShoppingMallHTML template.</p>
+        </section>
+
+        <section id="setup">
+            <h2>Setup</h2>
+            <ol>
+                <li>Download the TishShoppingMallHTML template package.</li>
+                <li>Copy the <code>css</code>, <code>fonts</code>, and <code>js</code> folders to your website's root directory.</li>
+            </ol>
+        </section>
+
+        <section id="meta-tags">
+            <h2>Meta Tags</h2>
+            <p>Include and update the following meta tags in the head section of your HTML:</p>
+            <pre><code>
+&lt;meta http-equiv="content-type" content="text/html; charset=utf-8"&gt;
+  &lt;meta http-equiv="x-ua-compatible" content="IE=edge"&gt;
+  &lt;meta name="author" content="Tishonator"&gt;
+            </code></pre>
+        </section>
+
+        <section id="css-files">
+            <h2>CSS Files</h2>
+            <p>Include the following CSS files in the head section of your HTML:</p>
+            <pre><code>
+&lt;link rel="stylesheet" href="./css/style.css"&gt;
+
+  &lt;!-- Font Icons --&gt;
+  &lt;link rel="stylesheet" href="./css/font-icons.css"&gt;
+  &lt;link rel="stylesheet" href="./css/et-line.css"&gt;
+
+  &lt;!-- Plugins/Components CSS --&gt;
+  &lt;link rel="stylesheet" href="./css/swiper.css"&gt;
+  &lt;link rel="stylesheet" href="./css/bs-switches.css"&gt;
+
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+            </code></pre>
+        </section>
+
+        <section id="custom-pages">
+            <h2>JS Files</h2>
+            <p>Include the following JS files in the body (above &lt;body&gt; tag) of your HTML:</p>
+                <pre><code>
+  &lt;script src="./js/plugins.min.js"&gt;&lt;/script&gt;
+  &lt;script src="./js/functions.bundle.js"&gt;&lt;/script&gt;
+                </code></pre>
+        </section>
+
+
+        <h2>JavaScript Documentation</h2>
+
+<h3>Loading Animation</h3>
+<p>
+    The script starts by displaying a loading animation. This is achieved by setting the display property of the element with the ID "loadingAnimation" to "block".
+</p>
+<code>
+document.getElementById("loadingAnimation").style.display = "block";
+</code>
+
+<h3>Fetching Data</h3>
+<p>
+    The <code>fetchData()</code> function is a dummy function that simulates fetching data from a server. It uses a timeout of 1.5 seconds and then logs "website data fetched" to the console.
+</p>
+<code>
+function fetchData() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      console.log("website data fetched");
+      resolve();
+    }, 1500);
+  });
+}
+</code>
+
+<h3>Swiper Slider Initialization</h3>
+<p>
+    After fetching data, the script initializes the Swiper slider with various settings.
+</p>
+<code>
+var swiper = new Swiper('.swiper-container', {
+    direction: 'horizontal',
+    loop: true,
+    ...
+});
+</code>
+
+<h3>DOM Content Loaded</h3>
+<p>
+    The script contains several functionalities that are executed once the DOM content is fully loaded:
+</p>
+<ul>
+    <li>Adjusting body padding based on the height of a fixed-top navbar.</li>
+    <code>
+    const navbarHeight = navbarElement.offsetHeight;
+    document.body.style.paddingTop = `${navbarHeight}px`;
+    </code>
+    <li>Adding flip effects to elements with the class "sign".</li>
+    <code>
+    sign.addEventListener('click', function() {
+        if (this.classList.contains('flipped')) {
+            this.classList.remove('flipped');
+        } else {
+            this.classList.add('flipped');
+        }
+    });
+    </code>
+    <li>Changing the navbar style based on the scroll position.</li>
+    <code>
+    if (window.pageYOffset > 0) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+    </code>
+    <li>Scroll-to-top functionality for an element with the ID "scrollToTop".</li>
+    <code>
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+    </code>
+    <li>Tab functionality for daily/weekly/monthly tabs.</li>
+    <code>
+    let targetContent = document.querySelector(tab.getAttribute('href'));
+    targetContent.classList.add('show', 'active');
+    </code>
+</ul>
+
+<h3>Adoption and Modification</h3>
+<p>
+    To adopt or modify this script for your project:
+</p>
+<ol>
+    <li>Ensure that the HTML elements referenced by their IDs or classes in the script exist in your HTML file.</li>
+    <li>For functionalities that you don't need, simply remove or comment out the corresponding code sections.</li>
+    <li>Adjust the settings, such as the Swiper slider settings or the timeout duration in the <code>fetchData()</code> function, to fit your project's requirements.</li>
+    <li>If you have different IDs or class names in your HTML, make sure to update the script to reference the correct elements.</li>
+</ol>
+
+
+        <section id="additional-info">
+            <h2>Additional Information</h2>
+            <p>If you encounter any issues or have further questions, please contact the support team.</p>
+        </section>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

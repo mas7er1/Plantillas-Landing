@@ -1,0 +1,28 @@
+include html/_vars.pug
+doctype html
+html(lang="en" class="no-js")
+	head
+		include html/_head.pug
+		title Rumon - Agency, Corporate, Studio Landing Page
+		meta(name='description', content='')
+	body
+		include html/_header.pug
+		//Content START
+		include sections/_slider.pug
+		include sections/_about.pug
+		include sections/_services.pug
+		include sections/portfolio/_portfolio.pug
+		include sections/_prices.pug
+		include sections/_how-we-works.pug
+		include sections/_sucsess.pug
+		include sections/_animate-numbers.pug
+		include sections/_testimonials.pug
+		include sections/_team.pug
+		include sections/_recent-blog.pug
+		include sections/_faq.pug
+		include sections/_contact.pug
+		//Content END
+		include html/_footer.pug
+		include html/_scripts.pug
+		if styler
+			include html/_style-custom.pug

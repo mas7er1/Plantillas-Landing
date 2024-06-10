@@ -1,0 +1,87 @@
+/**  01.  breadcrumb area **/
+
+.cc-breadcrumb {
+    display: block;
+    padding-bottom: 150px;
+}
+
+.cc-breadcrumb .breadcrumb-img {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+.cc-breadcrumb .breadcrumb-title h3 {
+    text-align: center;
+    padding: 130px 0;
+}
+
+/**  01.  end breadcrumb area **/
+
+
+/**  02.  blog area **/
+
+.about-title p {
+    margin: 30px 0;
+}
+
+.blog-section {
+    border-top: 1px solid #212121;
+    margin-bottom: 20px;
+}
+
+.blog-title{
+    text-align: left;
+    margin: 30px 0;
+}
+
+.blog-info {
+    margin: 30px 0;
+}
+
+.blog-item{
+    display: flex;
+}
+
+.blog-thumb {
+    margin: 15px 20px 0 0;
+}
+
+.categories-section {
+    border-top: 1px solid #212121;
+}
+
+.categories-title h4 {
+    margin: 30px 0;
+}
+
+.categories-discript ul {
+    padding: 0;
+}
+
+.categories-discript ul li {
+    list-style: none;
+    line-height: 40px;
+}
+
+.blog-discription {
+    margin: 20px 0 0 0;
+}
+
+.blog-discription h4 {
+    margin: 20px 0;
+}
+
+.blog-discription .btn {
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: inherit;
+    padding: 20px 0;
+    text-decoration: underline;
+}
+
+.blog-image-2{
+    margin-top: 50px;
+}

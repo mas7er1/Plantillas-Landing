@@ -1,0 +1,1119 @@
+/***********************************************************************************
+ *	+ [Master Stylesheet]
+
+ *	+ Project: Rumon - Agency, Corporate, Portfolio, Studio Landing Page
+ 	To use this template you must have a license purchased at TemplateMonster (templatemonster.com)
+ *	+ Autor: Brainiakthemes
+ *	+ Version: 1.0
+ ***********************************************************************************/
+
+/***********************************************************************************
+/* Header
+/** Navigation
+/* Slider
+/* Buttonts
+/* Forms
+/* Contol slider
+/** Control carousel
+/* Into slider
+/* Services
+/** Tabs
+/* How we work
+/** Item
+/* Work progress
+/* Our some work
+/* Portfolio
+/** Block item
+/*Content portfolio
+/**Project
+/*Control sliders
+/* Trigger
+/* We are in numbers
+/* Our skills
+/** Skill Bar
+/* Carousel trigger
+/** Slide
+/* Our team
+/** Item team
+/* Social links
+/* Testimonials
+/* Why chose us
+/* Our clients
+/* Contact with us
+/* Our location
+/* Footer
+	***********************************************************************************/
+
+@import "bourbon"	
+@import "vars"
+@import "mixins"
+@import "fonts"
+@import "libs"
+@import "components/portfolio/portfolio"
+@import "components/header"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+i
+	line-height: inherit
+hr
+	color: #eee
+	background-color: #eee
+	height: 1px
+	outline: none
+	border: none
+.clearfix
+	overflow: auto
+	&:after, &:before
+		content: ""
+		clear: both
+		display: table
+.al-input-group
+	position: relative
+	input, textarea
+		padding: 10px 50px 10px 0
+		border: none
+		border-bottom: 1px solid #eee
+		margin-bottom: 20px
+	i
+		position: absolute
+		right: 20px
+		top: 12px
+		color: #848484
+.al-notify
+	background-color: rgba($accent, 0.8) 
+	text-align: center
+	margin: 10px 0 10px 0
+	padding: 5px
+	font-size: 14px
+.pace
+	pointer-events: none
+	user-select: none
+.pace-inactive
+	display: none
+.pace
+	.pace-progress
+		background: $accent
+		position: fixed
+		z-index: 2000
+		top: 0
+		right: 100%
+		width: 100%
+		height: 2px
+	.pace-progress-inner
+		display: block
+		position: absolute
+		right: 0px
+		width: 100px
+		height: 100%
+		box-shadow: 0 0 10px $accent, 0 0 5px $accent
+		opacity: 1.0
+		transform: rotate(3deg) translate(0px, -4px)
+	.pace-activity
+		display: block
+		position: fixed
+		z-index: 2000
+		top: 15px
+		right: 15px
+		width: 14px
+		height: 14px
+		border: solid 2px transparent
+		border-top-color: $accent
+		border-left-color: $accent
+		border-radius: 10px
+		animation: pace-spinner 400ms linear infinite
+@keyframes pace-spinner
+	0%
+		transform: rotate(0deg)
+		transform: rotate(0deg)
+	100%
+		transform: rotate(360deg)
+		transform: rotate(360deg)
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+.text-center.al-heading
+	.al-heading__description
+		&:after
+			left: 0
+			right: 0
+			margin: auto
+.text-left
+	text-align: left
+section
+	padding: 100px 0 100px 0
+.al-pb-0
+	padding-bottom: 0
+b, strong
+	font-weight: bold
+p
+	line-height: 30px
+	letter-spacing: 0.5px
+	color: #6d6c6c
+input, textarea
+	width: 100%
+.al-vertical-full
+	height: 100vh!important
+	display: flex!important
+	align-items: center
+	justify-content: center
+
+/*******  Btns  ********/
+.al-btn
+	background-color: $accent
+	color: #fff
+	text-transform: uppercase
+	font-size: 14px
+	padding: 10px 40px 10px 40px
+	border-radius: 30px
+	transition: all ease 0.4s
+	display: inline-block
+	font-weight: 700
+	letter-spacing: 1px
+	outline: none!important
+	cursor: pointer
+	border: 1px solid transparent
+	&:hover
+		color: #fff
+		text-decoration: none
+		background: shade($accent, 4%)
+	&.al-btn-border
+		background-color: transparent
+		border: 1px solid $accent
+		color: $accent
+		// padding: 9px 39px 9px 39px
+	&.al-btn-border1
+		background-color: transparent
+		border: 1px solid $accent
+		color: #fff
+		// padding: 9px 39px 9px 39px
+		&:hover
+			background-color: #ffffff
+			color: $accent
+			border-color: #fff
+.al-btn-section
+	.al-btn
+		margin-right: 25px
+/*******  Darked  ********/	
+header
+	position: absolute
+	z-index: 3
+	margin: 0 auto
+	left: 0
+	right: 0
+/*******  Darked  ********/	
+.al-bg-dark
+	position: relative
+	background-attachment: fixed
+	&:after
+		content: ''
+		display: block
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		background-color: rgba(#000, 0.6)
+		z-index: 1
+	.container
+		z-index: 2
+		position: relative
+.al-bg-img
+	background-size: cover
+/*******  Home Slider ********/	
+.al-home-slider
+	padding: 0
+	position: relative
+	height: auto
+	&__slide
+		padding: 220px 0 220px 0
+		height: auto
+		&__title
+			color: #fff
+			font-size: 56px
+			font-weight: 600
+			text-transform: uppercase
+		&__description
+			color: #fff
+		.al-btn
+			margin-top: 40px
+			&:hover
+				box-shadow: 0 0 20px rgba($accent, 0.8)
+
+	.al-dots-control
+		position: absolute
+		bottom: 30px
+		left: 50px
+		ul
+			padding: 0
+			margin: 0
+			li
+				list-style: none
+				font-size: 0
+				margin-bottom: 10px
+				position: relative
+				display: block
+				float: none
+				margin-right: 0
+				&:last-child
+					margin-bottom: 0
+				&:after
+					content: ""
+					display: block
+					width: 20px
+					height: 1px
+					background-color: #fff
+					position: absolute
+					right: 13px
+					top: 7px
+					opacity: 0
+					transition: all ease 0.4s
+				button
+					border: none
+					display: inline-block
+					width: 14px
+					height: 14px
+					border-radius: 50%
+					outline: none
+					cursor: pointer
+					background-color: transparent
+					border: 2px solid #fff
+					font-size: 0
+					padding: 0
+			.slick-active
+				button
+					background-color: #fff
+				&:after
+					opacity: 1
+.al-tlt-text
+	ul
+		li
+			display: none
+/*******  Heading Title ********/
+.al-heading
+	margin-bottom: 65px
+	&__title
+		color: #292b2c
+		font-size: 50px
+		line-height: 50px
+		margin-bottom: 0
+		font-weight: 800
+		position: relative
+		font-family: 'Mukta', sans-serif
+		margin-bottom: 5px
+	&__description
+		color: #797979
+		margin-bottom: 0
+		&:after
+			content: ""
+			display: block
+			position: relative
+			width: 60px
+			height: 2px
+			margin-top: 15px!important
+			margin-bottom: 15px!important
+			background-color: $accent
+	&__center
+		text-align: center
+		
+	&__right
+		text-align: right
+	&__left
+		text-align: left
+	
+.al-heading-white
+	h1,h2,h3,h4,h5,h6
+		color: #fff
+	
+	.al-heading__description
+		color: #e6e6e6
+
+/*******  Social Links ********/
+ul.al-social
+	margin: 0
+	padding: 0
+	li
+		list-style: none
+		display: inline-block
+		margin-right: 10px
+		text-align: center
+		&:last-child
+			margin-right: 0
+		a
+			color: $accent
+			border: 1px solid $accent
+			width: 33px
+			height: 33px
+			display: inline-block
+			line-height: 33px
+			border-radius: 50%
+			font-size: 15px
+			transition: all ease 0.4s
+			i
+				line-height: inherit
+			&:hover
+				border-color: shade($accent, 20%)
+				color: shade($accent, 20%)
+
+/*******  Team item ********/
+.al-team
+	background-color: #fff
+	text-align: center
+	padding: 0 10px 35px 10px
+	box-shadow: rgba(#000, 0.07) 0 0 27px
+	transform-style: preserve-3d
+	margin-top: 100px
+	border-radius: 4px
+	&__img
+		width: 110px
+		height: 110px
+		border-radius: 50%
+		position: relative
+		margin-top: -55px
+		box-shadow: rgba(#000, 0.07) 0 0 27px
+		transform: translateZ(20px)
+	&__title
+		font-size: 18px
+		font-weight: 600
+		margin-top: 25px
+	&__description
+		font-size: 14px
+		margin-bottom: 25px
+		color: #777575
+/*******  FAQ ********/
+.al-faq
+	border: 1px solid #eee
+	cursor: pointer
+	&__title
+		font-size: 17px
+		font-weight: 600
+		color: #545454
+		outline: none!important
+		background: #fff
+		margin-bottom: 0
+		padding: 25px 55px 25px 30px
+		border-top: 1px solid #eee
+		position: relative
+		&:first-child
+			border-top: none!important
+		&:after
+			content: "\f105"
+			display: block
+			font-family: 'FontAwesome'
+			position: absolute
+			right: 30px
+			top: 24px
+			transition: all ease 0.4s
+		i
+			font-size: 35px
+			margin-right: 15px
+			color: shade($accent, 10%)
+			overflow: hidden
+			float: left
+	&__content
+		background-color: #fff
+		padding: 0px 30px 10px 30px
+		color: #6f6e6e
+		font-size: 15px
+	&__title.ui-accordion-header-active
+		border-bottom: none
+		padding: 25px 55px 10px 30px
+		&:after
+			transform: rotate(90deg)
+.al-faq-icon
+	.al-faq__title
+		padding: 15px 55px 15px 20px
+		font-size: 15px
+		line-height: 19px
+		overflow: auto
+		&:after
+			top: 15px
+		&:after, &:before
+			clear: both
+			display: table
+	.al-faq__content
+		font-size: 14px
+
+/*******  Prices Tables********/
+.al-prices-tabs
+	text-align: center
+	&__navigation
+		margin: 0
+		padding: 0
+		box-shadow: 0 0 20px rgba(#dbdbdb, 0.9)
+		display: inline-block
+		border-radius: 30px 
+		li
+			float: left
+			list-style: none
+			border-radius: 30px
+			a
+				background-color: #fff
+				color: #8c8c8c
+				text-decoration: none
+				padding: 15px 30px 15px 30px
+				font-size: 16px
+				font-weight: 600
+				display: block
+			&:first-of-type
+				a
+					border-radius: 30px 0 0 30px
+			&:last-of-type
+				a
+					border-radius: 0 30px 30px 0
+
+		li.ui-tabs-active
+			a
+				background-color: $accent
+				color: #fff
+
+.al-price-table
+	box-shadow: 0 0 20px rgba(#dbdbdb, 0.9)
+	border-radius: 5px
+	margin-top: 70px
+	transition: all ease 0.4s
+	&__head
+		background-color: #fff
+		padding: 35px 0 25px 0
+		border-radius: 5px 5px 0 0
+		&__name
+			font-weight: 400
+			font-size: 19px
+			color: #797777
+		&__price
+			font-weight: 600
+			font-size: 36px
+	&__body
+		ul
+			margin: 0
+			padding: 0
+			li
+				background-color: #fff
+				list-style: none
+				padding: 15px
+				color: #868686
+				font-size: 14px
+				text-transform: uppercase
+				&:nth-child(2n+1)
+					background-color: #f9f9f9
+				&:last-of-type
+					padding: 25px 25px
+					border-radius: 0 0 5px 5px
+	&:hover
+		box-shadow: 0 0 20px rgba(#000, 0.2)
+.al-most-price
+	position: relative
+	overflow: hidden
+	&:before
+		content: 'Most'
+		display: block
+		background-color: $accent
+		color: #fff
+		padding: 7px 50px 7px 50px
+		left: -34px
+		top: 15px
+		width: initial
+		position: absolute
+		transform: rotate(-45deg)
+/*******  How we works ********/
+.al-how-works
+	&__nav
+		overflow: auto
+		text-align: center
+		&:after, &:before
+			content: ""
+			clear: both
+			display: table
+	&__content
+		&__title
+			font-size: 20px
+			font-weight: 600
+		&__description
+		.al-faq
+			margin: 50px 0
+		&__step
+			height: auto!important
+		.slick-list
+			overflow: visible
+	&__nav
+		overflow: auto
+		display: flex
+		align-items: center
+		justify-content: center
+		padding: 20px 5px 20px 5px
+		position: relative
+		margin-bottom: 50px
+		&__progress
+			position: absolute
+			display: block
+			width: 100%
+			height: 2px
+			background-color: #dbdbdb
+			left: 0
+			right: 0
+			margin: auto
+			top: 17px
+			z-index: 0
+			&__count
+				position: absolute
+				display: block
+				width: 0
+				height: 2px
+				background-color: $accent
+				transition: all ease 0.3s
+		&__arrows
+			position: relative
+			&:after, &:before
+				content: ""
+				clear: both
+				display: table
+			&__prev, &__next
+				cursor: pointer
+				display: inline-block
+				width: 35px
+				height: 35px
+				border-radius: 50% 
+				color: #fff
+				background-color: $accent
+				z-index: 2
+				float: left
+				line-height: 35px
+				transition: all ease 0.3s
+				z-index: 1
+				position: relative
+				opacity: 0.4
+				i
+					line-height: inherit
+				&:hover
+					box-shadow: 0 0 20px rgba($accent, 0.8)
+					opacity: 1
+			&__prev
+				margin-right: 90px
+			&__next
+				margin-left: 90px
+		&__dots
+			display: inline-block
+			float: left
+			position: relative
+			// overflow: hidden
+			ul.dots
+				top: 0
+				li
+					margin-right: 45px
+					margin-left: 45px
+					&:first-child
+						margin-left: 0
+					&:last-child
+						margin-right: 0
+					
+					button
+						background-color: #dbdbdb
+						width: 35px
+						height: 35px
+						border-radius: 50%
+						border: none
+						font-size: 15px
+						transition: all ease 0.3s
+						color: #777575
+						&:hover
+							box-shadow: 0 0 20px rgba(#dbdbdb, 0.8)
+				li.slick-active, li.al-dots-li-active
+					button
+						top: 0
+						background-color: $accent
+						color: #fff
+						transition: none
+						&:hover
+							box-shadow: 0 0 20px rgba($accent, 0.8)
+/*******  Skillbar ********/
+.al-skillbar
+	margin-bottom: 30px
+	&__content
+		&__number
+			font-size: 15px
+			margin-bottom: 5px
+			color: #828282
+			font-weight: 400
+		&__progress
+			box-shadow: inset 0 1px 2px rgba(0,0,0,0.1)
+			background-color: #f5f5f5
+			height: 8px
+			border-radius: 4px
+			overflow: hidden
+			&__bar
+				height: 100%
+				background-color: $accent
+
+/*******  Services item ********/
+.al-service-item
+	border: 1px solid #e5e5e5
+	padding: 30px 20px 30px 20px
+	position: relative
+	display: flex
+	align-items: center
+	transition: all ease 0.4s
+	margin: 30px 0 30px 35px
+	&__title
+		font-size: 20px
+		font-weight: 600
+		margin-bottom: 10px
+	&__description
+		color: #868686
+		font-size: 15px
+		margin-bottom: 0
+	&__icon
+		transition: all ease 0.4s
+		border: 1px solid #e5e5e5
+		background-color: #f9f9f9
+		position: relative
+		width: 70px
+		height: 70px
+		flex: none
+		margin-left: -58px
+		margin-right: 21px
+		text-align: center
+		line-height: 67px
+		border-radius: 10px 0 10px 0
+		i
+			font-size: 40px
+			color: $accent
+			display: initial
+			vertical-align: middle
+			line-height: inherit
+	&:hover
+		border-color: transparent
+		box-shadow: rgba(#000, 0.07) 0 0 27px
+		.al-service-item__icon
+			border-color: transparent
+			box-shadow: rgba(#000, 0.07) 0 0 27px
+
+/*******  Testimonials ********/
+.al-testimonials
+	&__container
+		padding: 15px
+	&__item
+		box-shadow: 0 0 27px rgba(#000, 0.1)
+		display: inline-block
+		height: auto
+		padding: 20px
+		margin: 50px 20px 20px 20px
+		img
+			border-radius: 50%
+			max-width: 80px
+			position: relative
+			margin-top: -55px
+			margin-bottom: 15px
+			box-shadow: 0 0 27px rgba(#000, 0.1)
+		&__name
+			font-size: 18px
+			font-weight: 600
+			&:after
+				content: ''
+				display: block
+				width: 40px
+				height: 2px
+				margin-top: 5px
+				background: $accent
+		&__description
+			margin-top: 8px
+			font-size: 14px
+			font-style: italic
+			color: #656565
+		&__stars
+			float: right
+			i
+				color: $accent
+	&__nav
+		text-align: center
+		margin-top: 20px
+		&__dots
+			display: inline-block
+			margin: 0
+			padding: 0
+			li
+				display: inline-block
+				list-style: none
+				max-width: 50px
+				position: relative
+				
+				&:nth-of-type(2)
+					margin-left: -15px
+				&:nth-of-type(3)
+					margin-left: -15px
+				&:nth-of-type(4)
+					margin-left: -15px
+				&:nth-of-type(5)
+					margin-left: -15px
+				&:nth-of-type(6)
+					margin-left: -15px
+				&:nth-of-type(7)
+					margin-left: -15px
+				img
+					width: 100%
+					border-radius: 50%
+					border: 2px solid #fff
+		&__arrow
+			display: inline-block
+			padding: 10px
+			cursor: pointer
+			i
+				transition: all ease 0.3s
+			&:hover
+				i
+					color: $accent
+		.al-arrow-right
+			margin-left: 25px
+		.al-arrow-left
+			margin-right: 25px
+					
+
+/*******  Video about ********/
+.al-play-video
+	display: flex
+	align-items: center
+	justify-content: center
+	transform-style: preserve-3d
+	&__button
+		transform: translateZ(50px)
+		flex: none
+		display: block
+		position: absolute
+		background: #fff
+		width: 70px
+		height: 70px
+		text-align: center
+		line-height: 70px
+		color: $accent
+		border-radius: 50%
+		transition: all ease 0.4s
+		box-shadow: 0 0 38px rgba(#000, 0.5) 
+		i
+			line-height: inherit
+		&:hover
+			transform: scale(1.1)
+			color: shade($accent, 10%)
+
+
+/*******  Services item ********/
+.al-animate-number
+	text-align: center
+	margin: 30px 0
+	&__title
+		font-size: 15px
+		font-weight: 400
+		opacity: 0.8
+		color: #fff
+		margin-top: 20px
+		margin-bottom: 0
+	&__number
+		font-size: 38px
+		color: #fff
+		font-weight: 800
+	.al-service-item
+		&__icon
+			margin-left: 0
+			margin-right: 0
+			display: inline-block
+			transition: all ease 0.4s
+			i
+				transition: all ease 0.4s
+	&:hover
+		.al-service-item
+			&__icon
+				background-color: $accent
+				border-color: $accent
+				i
+					color: #fff
+/*******  Contact ********/
+.al-contact
+	box-shadow: 0 0 27px rgba(#000, 0.1)
+	padding: 35px
+	text-align: center
+	z-index: 2
+	position: relative
+	background-color: #fff
+	form
+		margin: 0
+		button
+			border: none
+			&:hover
+				box-shadow: 0 0 20px rgba($accent, 0.8)
+	&__title
+		margin-bottom: 30px
+.al-contact-map
+	margin-top: -150px
+	z-index: 0
+	
+
+/*******  Blog Recent Posts ********/
+.al-blog-recent-posts
+	position: relative
+	&__content
+		// padding: 50px 0 50px 0
+	&__arrows
+		.al-wrap-prev, .al-wrap-next
+			background-color: $text
+			display: inline-block
+			color: #fff
+			cursor: pointer
+			padding: 10px
+			transition: all ease 0.3s
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			z-index: 1
+			&:hover
+				background-color: $accent
+		.al-wrap-prev
+			left: -35px
+		.al-wrap-next
+			right: -35px
+.al-recent-post
+	background-color: #f9f9f9
+	height: auto
+	margin: 15px
+	overflow: hidden
+	transition: all ease 0.4s
+	
+	&__container
+		&--content
+			transform: skewY(4deg)
+		margin-top: -30px
+		background-color: #f9f9f9
+		position: relative
+		padding-top: 40px
+		transform: skewY(-4deg)
+		padding: 30px 20px 20px 20px
+		transition: all ease 0.4s
+		h3
+			font-size: 20px
+		p
+			font-size: 14px
+			color: #737373
+		.al-read-more
+			color: $accent
+			text-decoration: none
+			font-weight: 600
+			outline: 0
+			font-size: 14px
+			i
+				margin-left: 10px
+				line-height: initial
+			&:hover
+				color: $accent
+	&__thumb
+		overflow: hidden
+		position: relative
+	&:hover
+		box-shadow: 0 0 25px rgba(#000, 0.15)
+		background-color: #fff
+		.al-recent-post__container
+			background-color: #fff
+			.al-read-more
+				color: $accent
+			
+.al-post__share
+	float: right
+	position: relative
+	margin-top: -60px
+	margin-bottom: 0
+.al-post__share__social
+	position: absolute
+	top: 0
+	right: 0
+	visibility: hidden
+	width: 160px
+	transform: translateZ(0)
+	transform: translateX(0px)
+	transition: transform 0.35s ease
+	margin-top: 8px
+.al-post__share__social--active
+	visibility: visible
+	transform: translateZ(0)
+	transform: translateX(-30px)
+	transition: transform 0.35s ease
+	
+.share-icon
+	display: inline-block
+	width: 35px
+	height: 35px
+	line-height: 35px
+	margin-right: 10px
+	text-align: center
+	border-radius: 50%
+	background-color: $accent
+	color: #fff
+	font-size: 14px
+	transition: all 0.3s ease
+	outline: 0
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24)
+	&:last-of-type
+		margin-right: 0
+	&:hover
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.24)
+		transform: scale(1.2)
+	i
+		line-height: inherit
+
+.share-toggle
+	transform: translateZ(0)
+	transform: translateX(0px)
+	z-index: 2
+	text-decoration: none!important
+	box-shadow: 0 0 9px rgba(#000, 0.3)
+	width: 50px
+	height: 50px
+	line-height: 50px
+	margin-right: 0
+	cursor: pointer
+	&:before
+		content: "\f1e0"
+		font-family: 'FontAwesome'
+		color: #fff
+	&.share-expanded:before
+		content: "\f00d"
+.facebook
+	background-color: #3b5998
+.twitter
+	background-color: #00abe3
+
+.googleplus
+	background-color: #d3492c
+
+.facebook, .twitter, .googleplus
+	color: #fff
+
+.facebook:hover, .twitter:hover, .googleplus:hover
+	color: #eee
+
+	
+
+/*******  Subscribe Form ********/
+.al-subscribe-form
+	text-align: right
+	input
+		width: 100%
+		border: none
+		padding: 10px
+		font-size: 14px
+		border-radius: 20px
+		position: relative
+		text-align: left
+		margin-bottom: 0
+		padding: 10px 50px 10px 30px
+		@include placeholder
+			font-size: 14px
+	button
+		border: none
+		margin-top: 20px
+		&:hover
+			box-shadow: 0 0 20px rgba($accent, 0.8)
+
+/*******  Footer ********/
+footer
+	padding: 30px 0 80px 0
+	background-color: #292929
+	color: #fff
+	p
+		font-size: 13px
+		color: #fff
+.footer-widget
+	margin-top: 50px
+	&__nav
+		margin: 0
+		padding: 0
+		li
+			list-style: none
+			font-size: 14px
+			color: #f1f1f1
+			a
+				color: #b3b3b3
+				&:before
+					font-family: FontAwesome
+					content: "\f101"
+					font-size: 11px
+					color: #eee
+					transform: translateY(-4px)
+					margin-right: 10px
+					transition: all ease 0.2s
+	ul.al-social
+		margin-top: 50px
+		li
+			a
+				border-color: #848484 
+				color: #848484
+				&:hover
+					border-color: #fff
+					color: #fff
+.footer-down
+	background-color: #1b1b1b
+	color: #fff
+	padding: 30px 30px
+	text-align: center
+	font-size: 14px
+
+/*Back to top link*/
+.al-btn-to-top
+	position: fixed
+	bottom: 20px
+	right: 20px
+	z-index: 3
+	display: none
+	color: #fff
+	background-color: $accent
+	transition: all  ease 0.4s
+	text-align: center
+	width: 45px
+	height: 45px
+	line-height: 45px
+	border-radius: 50%
+	opacity: 0.7
+	transition: all ease .6s
+	cursor: pointer
+	i
+		font-size: 25px
+		line-height: inherit
+		vertical-align: middle
+	&:hover
+		opacity: 1
+		color: #fff
+
+.is-hidden
+	display: none
+.is-visible
+	display: block
+.al-mb-150
+	margin-bottom: 150px
+.al-mb-0
+	margin-bottom: 0
+.al-mb-15
+	margin-bottom: 15px
+ 
+@import "components/animations"
+@import "media"
+// Always at the end

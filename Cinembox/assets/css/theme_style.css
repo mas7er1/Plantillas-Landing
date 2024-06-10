@@ -1,0 +1,646 @@
+/** back to top **/
+
+#button {
+    display: inline-block;
+    background-color: #fff;
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    border-radius: 0;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+}
+
+#button:active {
+    background-color: #555;
+}
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/** header area **/
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    border-bottom: 1px solid #000;
+}
+
+.header-area {
+    background-color: #000;
+}
+
+.header-area .main-wrapper img {
+    width: auto;
+    display: block;
+}
+
+.header-area .main-wrapper .navbar-nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-area .main-wrapper ul li {
+    list-style-type: none;
+}
+
+.logo-and-icon {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar {
+    position: fixed;
+    padding: 0 20px;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    background: #000;
+}
+
+.navbar-nav>li>a {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 700;
+    display: block;
+    border-bottom: 1px solid #222;
+    border-radius: 1px;
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+.navbar-nav>li>a:hover {
+    color: #e3c5a2;
+}
+
+
+.navbar-toggler {
+    display: block;
+    background: transparent;
+    cursor: pointer;
+    padding: 6px 10px;
+    transition: 0.4s;
+    border-radius: 0;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-collapse {
+    overflow-y: scroll;
+    display: none;
+    padding: 20px;
+    width: 100%;
+    flex-basis: auto;
+}
+
+.navbar-collapse.active {
+    display: block;
+}
+
+
+.navbar-collapse.open {
+    display: block;
+    width: 100%;
+}
+
+.navbar-toggler:hover .navbar-collapse.active {
+    display: block;
+}
+
+
+.fa-classic,
+.fa-regular,
+.fa-solid,
+.far,
+.fas {
+    font-family: "Font Awesome 5 Free";
+}
+
+.header-search .site-header {
+    width: 100%;
+    transition: opacity 200ms;
+}
+
+.header-search .site-header button span img {
+    width: 20px;
+}
+
+
+.header-search .site-search {
+    background-color: transparent;
+    border: 0;
+    float: right;
+}
+
+.header-search .site-search-input {
+    display: block;
+    padding: 0px 30px 0 10px;
+    border: 0;
+    background-color: #000;
+    outline: none;
+    color: #808080;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 85px;
+}
+
+.header-search .site-search-reset {
+    outline: none;
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+    right: 10px;
+}
+
+.header-search .hide {
+    visibility: hidden;
+    opacity: 0;
+}
+
+/** end header area **/
+
+
+/** main slider area **/
+
+.cc-main-slider-area {
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-content {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+
+/** main slider area **/
+
+
+/** about area **/
+
+.cc-about-area {
+    margin: 150px 0 80px 0;
+}
+
+.cc-about-area .about-img {
+    overflow: hidden;
+}
+
+.cc-about-area .about-img img {
+    transition: 0.9s;
+}
+
+.cc-about-area .about-img img:hover {
+    transform: scale(1.3);
+}
+
+.about-description {
+    padding: 50px 0 0 70px;
+}
+
+.about-description p {
+    padding: 30px 0;
+}
+
+/** end about area **/
+
+
+/** about area 2 **/
+
+
+.cc-about-area-2 .about-img {
+    overflow: hidden;
+}
+
+.cc-about-area-2 .about-img img {
+    transition: 0.9s;
+}
+
+.cc-about-area-2 .about-img img:hover {
+    transform: scale(1.3);
+}
+
+.about-description-2 {
+    padding: 50px 70px 0 0;
+}
+
+.about-description-2 p {
+    padding: 30px 0;
+}
+
+/** end about area **/
+
+
+/** service area **/
+
+.cc-service-area {
+    margin: 50px 0 150px 0;
+}
+
+.cc-service-area .section-title {
+    text-align: center;
+    margin-top: 10px 0;
+}
+
+.cc-service-area .section-title h5 {
+    margin-top: 100px;
+}
+
+.cc-service-area .section-title h2 {
+    margin: 10px 0 40px 0;
+}
+
+.cc-service-area .service-part {
+    background-color: #000;
+    text-align: center;
+    padding: 45px;
+}
+
+.cc-service-area .service-part .service-icon img {
+    width: 70px;
+}
+
+.cc-service-area .service-part .service-content h4 {
+    padding: 30px 0 20px 0;
+}
+
+.cc-service-area .service-part .service-icon img {
+    transition: 0.5s;
+}
+
+.cc-service-area .service-part .service-icon img:hover {
+    transform: rotate(20deg);
+}
+
+/** end service area **/
+
+
+/** cms area **/
+
+.cc-cms-area {
+    margin-bottom: 150px;
+}
+
+.cc-cms-area .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cc-cms-area .section-title h2 {
+    margin: 20px 0;
+}
+
+.cc-cms-area .cms-part .cms-img {
+    overflow: hidden;
+}
+
+.cc-cms-area .cms-part .cms-content {
+    text-align: center;
+    padding: 20px 0 40px 0;
+}
+
+.cc-cms-area .cms-part .cms-img img {
+    transition: 0.9s;
+}
+
+.cc-cms-area .cms-part .cms-img img:hover {
+    transform: scale(1.3);
+}
+
+/** end cms area **/
+
+
+/** gallery area **/
+
+.cc-gallery-area {
+    margin-bottom: 150px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    margin: 10px 0;
+}
+
+.gallery-section {
+    overflow: hidden;
+}
+
+.gallery-section .gallery-image {
+    transition: 0.9s;
+}
+
+.gallery-section .gallery-image:hover {
+    transform: scale(1.3);
+}
+
+/** end gallery area **/
+
+
+/** testimonial area **/
+
+.cc-testimonial-area {
+    margin-bottom: 150px;
+}
+
+.testimonial-img {
+    width: 70px;
+    display: inline-flex;
+}
+
+.testimonail-description {
+    text-align: center;
+}
+
+.testimonail-description p {
+    padding: 30px 0;
+}
+
+.cc-testimonial-area h4 {
+    padding: 10px 0 30px 0;
+}
+
+
+/** end testimonial area **/
+
+
+/** about info area **/
+
+.cc-about-info {
+    margin-bottom: 150px;
+}
+
+.cc-about-info .about-info-section{
+    overflow: hidden;
+}
+
+.cc-about-info .about-info-img {
+    text-align: center;
+}
+
+.cc-about-info .about-info-img {
+    transition: 0.9s;
+}
+
+.cc-about-info .about-info-img:hover{
+    transform: scale(1.3);
+}
+
+.cc-about-info .about-description {
+    padding: 60px 0 0 30px;
+}
+
+.cc-about-info .about-description p {
+    line-height: 29px;
+}
+
+.about-tag img {
+    margin-right: 30px;
+}
+
+/** end about info area **/
+
+
+/** team  area **/
+
+.cc-team-area {
+    margin-bottom: 150px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h5 {
+    margin-bottom: 15px;
+}
+
+.cc-team-area .team-section{
+    overflow: hidden;
+}
+
+.cc-team-area .team-section .team-img{
+    transition: 0.9s;
+}
+
+.cc-team-area .team-section .team-img:hover{
+    transform: scaleX(-1);
+}
+
+.team-description {
+    text-align: center;
+}
+
+.team-description h4 {
+    padding: 20px 0 10px 0;
+}
+
+
+/** end team  area **/
+
+
+/** blog  area **/
+
+.cc-blog-area {
+    margin-bottom: 150px;
+}
+
+.section-title {
+    text-align: center;
+}
+
+.section-title h2 {
+    padding: 10px 0 50px 0;
+}
+
+.cc-blog-area .blog-section{
+    overflow: hidden;
+}
+
+.cc-blog-area .blog-section .blog-img{
+    transition: 0.9s;
+}
+
+.cc-blog-area .blog-section .blog-img:hover{
+    transform: scale(1.3);
+}
+
+.blog-description {
+    padding: 20px 0;
+}
+
+.blog-description h4 {
+    padding: 15px 0;
+    line-height: 34px;
+}
+
+
+/** end blog  area **/
+
+
+/** brand  area **/
+
+.cc-brand-area {
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 160px 0;
+
+}
+
+.cc-brand-area .brand-description p {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.cc-brand-area .owl-carousel .owl-item img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+/** end brand  area **/
+
+
+/** footer  area **/
+
+.form-area {
+    text-align: center;
+}
+
+.form-section {
+    align-items: center;
+    border-bottom: 1px solid #212121;
+    padding: 70px 0;
+
+}
+
+.form-section p {
+    padding: 20px 0;
+}
+
+.subscribe-form {
+    overflow: hidden;
+}
+
+.subscribe-form form input {
+    height: 47px;
+    width: 400px;
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+.subscribe-form button {
+    color: #000;
+    border-radius: inherit;
+    padding: 13px 40px;
+    background-color: #fff;
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    border: none;
+}
+
+.footer-widgets {
+    margin: 70px 0;
+    display: flex;
+}
+
+.footer-widgets .about-widgets ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-widgets .about-widgets ul li {
+    list-style: none;
+    padding: 30px 0;
+}
+
+.footer-widgets .about-widgets ul li a {
+    color: #fff;
+}
+
+.footer-widgets .production-widgets ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-widgets .production-widgets ul li {
+    list-style: none;
+    padding: 30px 0;
+}
+
+.footer-widgets .production-widgets ul li a {
+    color: #fff;
+    display: block;
+    line-height: 30px;
+}
+
+.footer-widgets .help-widgets ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-widgets .help-widgets ul li {
+    list-style: none;
+    padding: 30px 0;
+}
+
+.footer-widgets .help-widgets ul li a {
+    color: #fff;
+    display: block;
+    line-height: 30px;
+}
+
+.instagram-widgets .instagram-img {
+    display: flex;
+    padding: 30px 0 0 0;
+}
+
+.instagram-widgets .instagram-img-2 {
+    display: flex;
+    padding: 15px 0 0 0;
+}
+
+.cc-footer-area .footer-bottom p {
+    text-align: center;
+    border-top: 1px solid #212121;
+    padding: 20px 0;
+}
+
+/** end footer  area **/

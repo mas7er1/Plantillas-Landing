@@ -1,0 +1,65 @@
+/**  01.  breadcrumb area **/
+
+.breadcrumb {
+    display: block;
+    padding-bottom: 150px;
+}
+
+.breadcrumb .breadcrumb-img {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+.breadcrumb .breadcrumb-title h3 {
+    text-align: center;
+    padding: 130px 0;
+}
+
+/**  01.  end breadcrumb area **/
+
+
+/**  02.  about us area **/
+
+.about-us-title{
+    text-align: right;
+    padding-right: 50px;
+}
+
+.about-us-title h3{
+    line-height: 45px;
+}
+
+.about-us-descrip{
+    margin-bottom: 150px;
+}
+
+.about-us-descrip p{
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+/**  02.  end about us area **/
+
+
+/**  03.  counter area **/
+
+.counter-section{
+    padding: 150px 0;
+    display: flex;
+    text-align: center;
+    border-bottom: 1px solid #212121;
+}
+
+/**  03.  end counter area **/
+
+
+/**  04.  team area **/
+
+.team-area{
+    margin-top: 150px;
+}
+
+/**  04.  end team area **/

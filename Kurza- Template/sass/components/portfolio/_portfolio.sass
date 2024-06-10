@@ -1,0 +1,439 @@
+
+/*******  Portfolio ********/
+.al-portfolio-navigation
+	text-align: center
+	margin-bottom: 50px
+	margin-left: 15px
+	margin-right: 15px
+	ul
+		box-shadow: rgba(#000, 0.07) 0 0 27px
+		margin: 0
+		padding: 0
+		display: inline-block
+		padding: 10px 10px
+		border-radius: 30px
+		margin-left: 0
+		margin-right: 0
+		margin: auto
+		position: relative
+		li
+			list-style: none
+			display: inline-block
+			padding: 5px 40px 5px 40px
+			font-size: 13px
+			color: #7d7d7d
+			cursor: pointer
+			position: relative
+			border-radius: 30px
+			text-transform: uppercase
+			font-weight: 600
+			&:last-child
+				border: none
+			&:hover
+				color: $accent
+		.active
+			background-color: $accent
+			color: #fff
+			&:hover
+				color: #fff
+/*Portfolio pop up*/
+.modal-box
+	max-width: 620px
+	background: #fff
+	position: relative
+	margin: 0 auto
+	left: 0
+	overflow: hidden
+	iframe
+		width: 100%
+		height: 400px
+	.mfp-close
+		background-color: rgba(255, 255, 255, 0.12)
+		+mt(0.5s)
+		&:hover
+			background-color: #fff
+	.post-thumb
+		img
+			width: 100%
+			height: auto
+	.buttons-section
+		margin-bottom: 20px
+	.img-responsive
+		width: 100%
+	.modal-box-content
+		padding-left: 20px
+		padding-right: 20px
+		//padding-bottom: 20px
+		font-size: 14px
+		hr
+			width: 100%
+		h2, h3
+			font-weight: 700
+			font-size: 25px
+			line-height: initial
+			margin-bottom: 0
+			margin-top: 20px
+			span
+				color: $accent
+		h3
+			font-size: 20px
+			&:after
+				content: ""
+				display: block
+				height: 2px
+				width: 40px
+				background-color: $accent
+				margin-top: 8px
+				margin-bottom: 15px
+		p
+			margin-top: 15px
+			font-size: 15px
+			color: #545454
+			letter-spacing: 0.4px
+	.list-project
+		padding-left: 0
+		li
+			list-style: none
+			font-size: 14px
+			b
+				font-weight: 600
+			a
+				color: $accent
+				i
+					margin-left: 6px
+					position: relative
+					top: 1px
+	.slider-wrap
+		position: relative
+	iframe
+		border: none
+
+.al-portfolio-layout-boxed
+	.item-wrap
+		img
+			width: 100%
+			height: auto
+			position: relative
+		.tizer-circle
+			top: 20px
+			right: 20px
+			font-size: 12px
+			line-height: 32px
+			width: 32px
+			height: 32px
+			line-height: 32px
+			i
+				line-height: inherit
+	article
+		margin-top: 1%
+		margin-bottom: 1%
+		transform-style: preserve-3d
+		a
+			outline: none
+.al-portfolio-layout
+	.item-wrap img
+		width: 100%
+		height: auto 
+		position: relative
+	.al-ajax-navigation
+		margin-top: 0
+		margin-bottom: 0
+		background-color: transparent
+	.al-masonry-posts
+		.gutter-sizer
+			width: 0
+	.al-masonry-posts[data-size="4"] article
+		width: 25%
+		display: block
+	.al-masonry-posts[data-size="3"] article
+		width: 33.333%
+		display: block
+	.al-masonry-posts[data-size="2"] article
+		width: 50%
+		display: block
+	.al-masonry-posts[data-size="1"] article
+		width: 100%
+		display: block
+
+/*Circle*/
+.tizer-circle
+	position: relative
+	color: #fff
+	width: 40px
+	height: 40px
+	background-color: $accent
+	text-align: center
+	font-size: 13px
+	line-height: 40px
+	vertical-align: middle
+	border-radius: 50%
+
+/*Triangle*/
+.tizer-triangle
+	position: absolute
+	top: 10px
+	right: 10px
+	color: #fff
+	font-size: 17px
+	@include triangle(65px, $accent, up-right)
+	i
+		position: absolute
+		top: -60px
+		right: 10px
+.content-wrap
+	height: 100%
+	width: 100%
+	overflow: hidden
+	display: table
+	.content-va
+		display: table-cell
+		vertical-align: middle
+
+    /*Portfolio masonry*/
+.container-full
+	width: 100%
+	height: inherit
+	position: relative
+.masonry-portfolio
+	background-attachment: fixed
+.masonry-item-pr
+	padding: 0
+	animation-delay: 0.4s
+.wrap-ms-pr
+	position: relative
+	display: block
+	width: 100%
+	height: 100%
+	outline: none
+	.bg-mask-pr
+		background-color: rgba(#111, 0.4)
+		display: block
+		width: 100%
+		height: 100%
+		position: absolute
+		text-align: center
+		.icon
+			border-radius: 50%
+			display: inline-block
+			width: 50px
+			font-size: 17px
+			height: 50px
+			background-color: #111
+			color: #fff
+			text-align: center
+			line-height: 50px
+			vertical-align: middle
+	img
+		width: 100%
+		vertical-align: middle
+
+.dh-container
+	position: relative
+	overflow: hidden
+	
+.dh-overlay
+	position: absolute
+	top: -100%
+	transform: translateZ(20px)
+	
+
+.item-wrap
+	position: relative
+	overflow: hidden
+	.tizer-circle
+		position: absolute
+		right: 25px
+		top: 25px
+	.content-wrap
+		position: relative
+		
+	img
+		+mt(0.5s)
+		transition-delay: 0.3s
+		filter: blur(0)
+		backface-visibility: hidden
+	&:hover
+		.content
+			opacity: 1
+		img
+			filter: blur(10px)
+		.content
+			&::before
+				background-color: rgba(#000, 0.7)
+		h2, p
+			color: #fff
+	.content
+		padding-left: 40px
+		padding-right: 40px
+		position: absolute
+		text-align: center
+		height: 100%
+		width: 100%
+		top: 0
+		&::before
+			display: block
+			top: 10px
+			+mt(0.5s)
+			right: 10px
+			bottom: 10px
+			left: 10px
+			position: absolute
+			content: ''
+	h2
+		font-size: 18px
+		margin-bottom: 0px
+		line-height: 27px
+		margin-top: 0
+		color: #fff
+		font-weight: 600
+		text-transform: uppercase
+
+	p
+		margin-top: 10px
+		font-size: 14px
+		color: #fff
+		margin-bottom: 0
+		&:before
+			content: ""
+			display: block
+			height: 1px
+			width: 30px
+			background-color: $accent
+			margin: 0 auto
+			margin-top: 12px
+			margin-bottom: 8px
+
+.al-masonry-posts[data-size="4"] article
+	width: 23.5%
+	display: block
+.al-masonry-posts[data-size="3"] article
+	width: 32%
+	display: block
+.al-masonry-posts[data-size="2"] article
+	width: 49%
+	display: block
+.al-masonry-posts
+	.gutter-sizer
+		width: 2%
+
+/*Start Custom dots Slick slider*/
+.dots-control-carousel
+	margin: auto
+	margin-top: 40px
+	height: 16px
+	text-align: center
+.dots
+	display: inline-block!important
+	text-align: center
+.dots-control,.dots
+	margin: 0
+	padding: 0
+	top: -2px
+	position: relative
+	li
+		float: left
+		list-style: none
+		margin-right: 12px
+		&:last-child
+			margin-right: 0
+		button
+			font-size: 0px
+			padding: 0
+			height: 8px
+			width: 8px
+			border-radius: 50%
+			outline: none
+			background-color: $white
+			border: none
+			display: block
+			cursor: pointer
+	.slick-active	
+		button
+			position: relative
+			top: -1px
+			width: 10px
+			height: 10px
+			border: 2px solid $white
+			background: none
+
+
+
+/*Gallery slide*/
+.gallery-slide
+	.dots-control-carousel
+		position: absolute
+		margin-top: 0
+		bottom: 18px
+		left: 0
+		right: 0
+		margin: 0 auto
+/*slider opacity control*/
+.gallery-slide
+	.prev-next-block-rotate	
+		.wrap-prev
+			left: -120px
+		.wrap-next
+			right: -120px
+		.wrap-prev, .wrap-next
+			margin-top: 0
+			opacity: 0.4
+			.prev, .next
+				width: 100%
+				height: 100%
+				display: block
+				line-height: 80px
+				i
+					line-height: inherit
+		
+		.wrap-prev, .wrap-next
+			&:hover
+				opacity: 1
+	&:hover
+		.prev-next-block-rotate	
+			.wrap-prev
+				left: -42px
+			.wrap-next
+				right: -42px
+
+/*Start PREV & NEXT CONTROL SLIDER*/
+.prev-next-block-rotate
+	transition: all ease .5s
+	.slick-arrow
+		color: $white
+	.wrap-prev,.wrap-next
+		height: 80px
+		width: 80px
+		line-height: 80px
+		background-color: $white
+		position: absolute
+		font-size: 22px
+		color: $white
+		cursor: pointer
+		margin-top: 5px
+		transition: all ease .6s
+		border-radius: 4px
+		transform: translateY(-50%) rotate(45deg)
+		text-align: center
+		top: 50%
+		box-shadow: 1px 0px 2px #4e4e4e
+		i
+			color: #808080
+	.wrap-prev
+		left: -42px
+		i
+			position: relative
+			transform: rotate(-45deg) translate(20px, 0px)
+
+	.wrap-next
+		right: -42px
+		i
+			position: relative
+			transform: rotate(-45deg) translate(-20px, 0px)
+
+.al-iframe-content
+	height: auto
+	iframe
+		width: 100%
+		min-height: 400px
+
+@import "media"		

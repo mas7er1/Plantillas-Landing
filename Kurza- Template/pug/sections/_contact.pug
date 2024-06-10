@@ -1,0 +1,26 @@
+section#contant.al-pb-0(style="background-color:#fff;")
+	.container
+		.row.justify-content-center
+			.col-lg-8
+				.al-heading.text-center
+					h2.al-heading__title Contact Information
+					p.al-heading__description Tristique velit phasellus sed auctor leo eros luctus nibh fermentum, ad imperdiet rhoncus dolorhabitant purus velit aliquet donecurna ut in turpis
+				.al-contact
+					//- h3.al-contact__title Say Hello
+					form.al-contact-form
+						.row
+							.col-lg-6
+								.al-input-group
+									input(name="name" type="text" required placeholder="Your Name *")
+									i.fa.fa-user
+							.col-lg-6
+								.al-input-group
+									input(name="name" type="email" required placeholder="Email Address *")
+									i.fa.fa-envelope
+							.col-lg-12
+								.al-input-group
+									textarea(name="mesasage" rows="5" required placeholder="Messege *")
+								.al-notify.is-hidden.success-msg Your message has been send successfully
+								.al-notify.is-hidden.error-msg Error sending message
+								button.al-btn Send Request
+	#al-map.al-contact-map(data-zoom="13" data-height="500" data-address="Kyiv" data-address-details="Our location" data-marker="img/map.png")

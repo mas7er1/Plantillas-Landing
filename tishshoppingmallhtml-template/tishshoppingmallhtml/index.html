@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>TishShoppingMallHTML - Shopping Mall HTML Template</title>
+
+        <!-- Font-Awesome ================================================== -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+
+        <style>
+          .css3-spinner {
+            background-color: #131722;
+          }
+
+          /* Loading Effect */
+            .loading-container {
+              display: none;
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: white;
+              z-index: 9999;
+            }
+
+            .loading {
+              width: 128px;
+              height: 128px;
+              background-image: url('./assets/logo.png');
+              background-size: cover;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              animation: fadeInOut 2s linear infinite;
+            }
+
+            @keyframes fadeInOut {
+              0% { opacity: 0.1; }
+              50% { opacity: 1; }
+              100% { opacity: 0.1; }
+            }
+          </style>
+    </head>
+    <body>    
+        <div id="loadingAnimation" class="loading-container">
+          <div class="loading"></div>
+        </div>
+
+
+        <div id="header-sticky" class="bg-14 mobile-menu">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-8">
+              <div class="logo">
+                <a href="">
+                  <img src="./assets/shopping-mall-logo.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="col-xl-7 col-lg-7 col-md-7 col-sm-2">
+              <div class="wrap_nav mainmenu">
+                <ul id="nav-14">
+                  <li><a href="#">Home</a>
+                  </li>
+                  <li><a href="#services">Services</a>
+                    <ul class="sub-menu">
+                      <li><a href="#services">Service 1</a></li>
+                      <li><a href="#services">Service 2</a></li>
+                      <li><a href="#services">Service 3</a></li>         
+                    </ul>
+                  </li>
+                  <li><a href="#team">Team</a></li>
+                  <li><a href="#gallery">Gallery</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-8 tbs">
+              <form class="form">
+                <div>
+                  <input type="text" class="form-control" placeholder="Search here..">
+                </div>
+                <button type="submit" class="btn"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+              
+        <div class="slider-area banner-inner">
+          <div class="slider-active">
+            <div class="slider-wrapper ami-parallax vh d-flex" style="background-image:url(./assets/slide1.jpg)">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h1>Discover Fashion & Lifestyle <br /> at Premier Mall</h1>
+                    <p>Explore the latest trends from top brands and enjoy a unique shopping experience. Find everything from fashion to electronics under one roof.</p>
+                    <div class="home_btn">
+                      <a class="learn_btn" href="#">Learn More</a>
+                      <a class="get_btn" href="#">Start Shopping</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="heading-tittle-area accordion-bg">
+          <div class="heading-tittle-warp">
+            <div class="heading-tittle-four">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="heading-tittle">
+                      <span class="sub-tittle">Your One-Stop Destination</span>
+                      <h2>We are the ultimate shopping <span class="gradient-text1">experience</span></h2>
+                      <p>From exclusive brand stores to delightful dining options, enjoy a day out with family and friends at our comprehensive mall.</p>
+                    </div>
+                  </div>
+                </div>  
+              </div>  
+            </div>  
+          </div>  
+        </div>
+
+        <section class="css-section mt-5 pb-5">
+          <div class="container text-center">
+            <h2 class="css-title" id="services">Explore Our Services</h2>
+            <p class="css-description margin-bottom-60">Experience the best in shopping, dining, and entertainment all in one place.</p>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="css-col type-14">
+                  <h2>Exclusive Stores</h2>
+                  <i class="fa fa-tag" aria-hidden="true"></i>
+                  <p>Discover a wide range of international brands and boutique shops offering the latest in fashion, beauty, and more.</p>
+                  <a href="#" class="btn">Read More</a>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="css-col type-14">
+                  <h2>Gourmet Dining</h2>
+                  <i class="fa fa-cutlery" aria-hidden="true"></i>
+                  <p>Savor culinary delights from around the world at our gourmet restaurants and fast food outlets.</p>
+                  <a href="#" class="btn">Read More</a>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="css-col type-14">
+                  <h2>Entertainment Hub</h2>
+                  <i class="fa fa-film" aria-hidden="true"></i>
+                  <p>Enjoy the latest movies, family entertainment centers, and live events for a fun-filled day at the mall.</p>
+                  <a href="#" class="btn">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+<div class="parallax-container">
+  <div id="parallax-background" style="background-image: url('./assets/parallax-bg.jpg');"></div>
+  <div class="parallax-content">
+    <h1>Welcome to Premier Shopping Mall</h1>
+    <p>Your destination for shopping, dining, and entertainment. Explore a world of fashion, tastes, and fun for the whole family.</p>
+  </div>
+</div>
+
+<div class="heading-tittle mt-5 text-center">
+  <h2>Our Customers <span class="gradient-text1">Feedback</span></h2>
+</div>
+<div class="container tishonator-3 tishonator-random-colors tshnt-tstm-equalheight">
+    <div class="row">
+        <div class="col-md-4 tishonator-col">
+          <div class="tishonator-wrapper">
+            <div class="tishonator-details">
+              <div class="tshnt-tstm-testimonial-title">A Shopper's Paradise!</div>
+              <div class="tshnt-tstm-message">
+                <i class="fa fa-quote-left"></i> 
+                The variety of stores and brands is incredible! There’s something for everyone, from high-end fashion to everyday needs.
+              </div>
+              <div class="tishonator-client-details">
+                <div class="tshnt-tstm-name">Maria Gonzalez</div>
+                <div class="tshnt-tstm-designation"> - Avid Shopper </div>
+                <div class="tshnt-tstm-rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tshnt-tstm-dots text-center">
+            <span class="jdt1"></span>
+            <span class="jdt2"></span>
+            <span class="jdt3"></span>
+            <span class="jdt4"></span>
+          </div>
+          <div class="tishonator-avatar">
+            <img src="./assets/testim1.jpg" class="img-responsive" alt="Maria Gonzalez">
+          </div>
+        </div>
+        <div class="col-md-4 tishonator-col">
+          <div class="tishonator-wrapper">
+            <div class="tishonator-details">
+              <div class="tshnt-tstm-testimonial-title">Delicious Dining Options!</div>
+              <div class="tshnt-tstm-message">
+                <i class="fa fa-quote-left"></i> 
+                Whether it’s a quick bite or a fine dining experience, the food court and restaurants offer great variety and tasty options.
+              </div>
+              <div class="tishonator-client-details">
+                <div class="tshnt-tstm-name">David Smith</div>
+                <div class="tshnt-tstm-designation"> - Food Critic </div>
+                <div class="tshnt-tstm-rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tshnt-tstm-dots text-center">
+            <span class="jdt1"></span>
+            <span class="jdt2"></span>
+            <span class="jdt3"></span>
+            <span class="jdt4"></span>
+          </div>
+          <div class="tishonator-avatar">
+            <img src="./assets/testim2.jpg" class="img-responsive" alt="David Smith">
+          </div>
+        </div>
+        <div class="col-md-4 tishonator-col">
+          <div class="tishonator-wrapper">
+            <div class="tishonator-details">
+              <div class="tshnt-tstm-testimonial-title">Unforgettable Experiences!</div>
+              <div class="tshnt-tstm-message">
+                <i class="fa fa-quote-left"></i> 
+                The entertainment options are fantastic. From movies to kids' play areas, it’s the perfect spot for family fun.
+              </div>
+              <div class="tishonator-client-details">
+               
+                <div class="tshnt-tstm-name">Sophie Lee</div>
+                <div class="tshnt-tstm-designation"> - Happy Parent </div>
+                <div class="tshnt-tstm-rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tshnt-tstm-dots text-center">
+            <span class="jdt1"></span>
+            <span class="jdt2"></span>
+            <span class="jdt3"></span>
+            <span class="jdt4"></span>
+          </div>
+          <div class="tishonator-avatar">
+            <img src="./assets/testim3.jpg" class="img-responsive" alt="Sophie Lee">
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="image-card-area">
+  <div class="image-card-warp">
+    <div class="image-card-one">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div class="image-card-wrapper mb-30">
+              <div class="image-card-img">
+                <a href="#"><img src="./assets/hero-image.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="image-card-wrapper mb-30">
+              <div class="image-card-text">
+                <h4><a href="#">The Ultimate Guide to the Latest Fashion Trends</a></h4>
+                <p>Stay ahead of the curve with our comprehensive guide to this season's must-have fashion trends. From runway to retail, discover how you can incorporate the latest styles into your wardrobe.</p>
+                <a href="#">Continue Reading</a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>  
+    </div>  
+  </div>  
+</div>
+
+
+
+<div class="images-area images-bg">
+  <div class="heading-tittle mt-5 text-center">
+  <h2 id="gallery">Our Shopping Mall <span class="gradient-text1">Gallery</span></h2>
+</div>
+        <div class="images-warp">
+          <div class="images-eight">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-md-4 col-sm-6 mb-4">
+                  <a href="./assets/slide1.jpg" class="simple-lightbox">
+                    <img src="./assets/slide1.jpg" class="img-fluid" alt="Gallery Thumb 1">
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                  <a href="./assets/slide2.jpg" class="simple-lightbox">
+                    <img src="./assets/slide2.jpg" class="img-fluid" alt="Gallery Thumb 2">
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                  <a href="./assets/slide3.jpg" class="simple-lightbox">
+                    <img src="./assets/slide3.jpg" class="img-fluid" alt="Gallery Thumb 3">
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                  <a href="./assets/slide4.jpg" class="simple-lightbox">
+                    <img src="./assets/slide4.jpg" class="img-fluid" alt="Gallery Thumb 4">
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                  <a href="./assets/slide5.jpg" class="simple-lightbox">
+                    <img src="./assets/slide5.jpg" class="img-fluid" alt="Gallery Thumb 5">
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                  <a href="./assets/slide6.jpg" class="simple-lightbox">
+                    <img src="./assets/slide6.jpg" class="img-fluid" alt="Gallery Thumb 6">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>  
+      </div>
+
+
+<section class="team-section style-2">
+  <div class="heading-tittle mt-5 text-center">
+  <h2 id="team">Our <span class="gradient-text1">Team</span></h2>
+</div>
+    <!-- team area start -->
+    <div class="our-team">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <!-- team member (1) start -->
+                    <div class="team-member">
+                        <div class="member-pic">
+                            <img src="./assets/team1.jpg" alt=""><!-- photo of a member -->
+                        </div><!-- end div .member-pic -->
+                        <div class="member-data">
+                            <div class="name">
+                                <h4>Jordan Smith</h4>
+                                <h6>General Manager</h6>
+                            </div><!-- end div .name -->
+                            <div class="social">
+                                <a href="#"><i class="fa fa-facebook"></i></a><!-- member's facebook link -->
+                                <a href="#"><i class="fa fa-twitter"></i></a><!-- member's twitter link -->
+                                <a href="#"><i class="fa fa-instagram"></i></a><!-- member's instagram link -->
+                            </div><!-- end div .social -->
+                        </div>
+                    </div>
+                    <!-- team member (1) end -->
+                </div><!-- end bootstrap .col-* -->
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <!-- team member (2) start -->
+                    <div class="team-member">
+                        <div class="member-pic">
+                            <img src="./assets/team2.jpg" alt=""><!-- photo of a member -->
+                        </div><!-- end div .member-pic -->
+                        <div class="member-data">
+                            <div class="name">
+                                <h4>Emily Roberts</h4>
+                                <h6>Retail Manager</h6>
+                            </div><!-- end div .name -->
+                            <div class="social">
+                                <a href="#"><i class="fa fa-facebook"></i></a><!-- member's facebook link -->
+                                <a href="#"><i class="fa fa-twitter"></i></a><!-- member's twitter link -->
+                                <a href="#"><i class="fa fa-instagram"></i></a><!-- member's instagram link -->
+                            </div><!-- end div .social -->
+                        </div>
+                    </div>
+                    <!-- team member (2) end -->
+                </div><!-- end bootstrap .col-* -->
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <!-- team member (3) start -->
+                    <div class="team-member">
+                        <div class="member-pic">
+                            <img src="./assets/team3.jpg" alt=""><!-- photo of a member -->
+                        </div><!-- end div .member-pic -->
+                        <div class="member-data">
+                            <div class="name">
+                                <h4>Liam Wong</h4>
+                                <h6>Marketing Director</h6>
+                            </div><!-- end div .name -->
+                            <div class="social">
+                                <a href="#"><i class="fa fa-facebook"></i></a><!-- member's facebook link -->
+                                <a href="#"><i class="fa fa-twitter"></i></a><!-- member's twitter link -->
+                                <a href="#"><i class="fa fa-instagram"></i></a><!-- member's instagram link -->
+                            </div><!-- end div .social -->
+                        </div>
+                    </div>
+                    <!-- team member (3) end -->
+                </div><!-- end bootstrap .col-* -->
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <!-- team member (4) start -->
+                    <div class="team-member">
+                        <div class="member-pic">
+                            <img src="./assets/team4.jpg" alt=""><!-- photo of a member -->
+                        </div><!-- end div .member-pic -->
+                        <div class="member-data">
+                            <div class="name">
+                                <h4>Sophia Lee</h4>
+                                <h6>Customer Service Manager</h6>
+                            </div><!-- end div .name -->
+                            <div class="social">
+                                <a href="#"><i class="fa fa-facebook"></i></a><!-- member's facebook link -->
+                                <a href="#"><i class="fa fa-twitter"></i></a><!-- member's twitter link -->
+                                <a href="#"><i class="fa fa-instagram"></i></a><!-- member's instagram link -->
+                            </div><!-- end div .social -->
+                        </div>
+                    </div>
+                    <!-- team member (4) end -->
+                </div><!-- end bootstrap .col-* -->
+
+            </div><!-- end div .row -->
+        </div><!-- enddiv .container -->
+    </div>
+    <!-- team area end -->
+</section>
+
+
+
+<div class="call-out-area call-bg-two">
+    <div class="call-out-warp">
+      <div class="call-out-two">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9">
+              <div class="call-out-tittle">
+                <h2>Discover the Ultimate Shopping Experience</h2>
+                <p>Join us at Premier Mall, where the latest in fashion, fine dining, and entertainment awaits. Experience shopping like never before.</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="call-out-btn">
+                <a href="#">Explore Now</a>
+              </div>
+            </div>
+          </div>  
+        </div>  
+      </div>  
+    </div>  
+  </div>
+
+<section class="sec-spacer">
+    <div class="heading-tittle mt-5 text-center">
+  <h2 id="projects">Shopping Mall <span class="gradient-text1">Projects</span></h2>
+</div>
+    <div class="container container-center">
+      <div class="row">
+        <div class="col-md-4 col-sm-6">
+            <div class="tc-image-effect3">
+            <img src="./assets/slide1.jpg" alt="Seasonal Fashion Finds">
+            <div class="caption">
+              <h3>Seasonal Fashion Finds</h3>
+              <p>Explore the latest seasonal trends from top brands and designers. Update your wardrobe today!</p>
+            </div>
+            <div class="link-wrap">
+              <a href="#1"><i class="fa fa-search"></i></a>
+              <a href="#1"><i class="fa fa-link"></i></a>
+            </div>
+          </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="tc-image-effect3">
+            <img src="./assets/slide2.jpg" alt="New Store Openings">
+            <div class="caption">
+              <h3>New Store Openings</h3>
+              <p>Be the first to discover the newest additions to our mall. Exciting shopping experiences await!</p>
+            </div>
+            <div class="link-wrap">
+              <a href="#1"><i class="fa fa-search"></i></a>
+              <a href="#1"><i class="fa fa-link"></i></a>
+            </div>
+          </div>
+          </div>
+          <div class="col-md-4 col-sm-6 hidden-sm">
+            <div class="tc-image-effect3">
+            <img src="./assets/slide3.jpg" alt="Exclusive Mall Events">
+            <div class="caption">
+              <h3>Exclusive Mall Events</h3>
+              <p>Don't miss out on our exclusive events, from fashion shows to culinary fairs. Experience the excitement!</p>
+            </div>
+            <div class="link-wrap">
+              <a href="#1"><i class="fa fa-search"></i></a>
+              <a href="#1"><i class="fa fa-link"></i></a>
+            </div>
+          </div>
+          </div>
+      </div>      
+    </div>
+  </section>
+
+
+
+<div class="brand-area pb-60">
+        <div class="brand-area-warp">
+          <div class="brand-area-three">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="brand-active-three bg-active">
+                    <div class="brand-img">
+                      <div class="img">
+                        <img src="./assets/slide1.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div class="brand-img">
+                      <div class="img">
+                        <img src="./assets/slide2.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div class="brand-img">
+                      <div class="img">
+                        <img src="./assets/slide3.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div class="brand-img">
+                      <div class="img">
+                        <img src="./assets/slide4.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div class="brand-img">
+                      <div class="img">
+                        <img src="./assets/slide5.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div class="brand-img">
+                      <div class="img">
+                        <img src="./assets/slide6.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div class="brand-img">
+                      <div class="img">
+                        <img src="./assets/slide4.jpg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<section>     
+    <footer>
+      <div class="footer-top-area pt-80 pb-45">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+              <div class="footer-wrapper mb-30">
+                <h4 class="footer-text">Mall Information</h4>
+                <ul class="footer-link">
+                  <li>1 (800) 123-4567</li>
+                  <li>contact@premiermall.com</li>
+                  <li>123 Fashion Ave, New York, NY</li>
+                  <li>Open: Mon-Sun, 9:00-21:00</li>
+                </ul>
+                <div class="footer-icon">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-google"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+              <div class="footer-wrapper mb-30">
+                <h4 class="footer-text">Quick Links</h4>
+                <ul class="footer-menu">
+                  <li><a href="#"><i class="fa fa-caret-right"></i>Home</a></li>
+                  <li><a href="#"><i class="fa fa-caret-right"></i>About Us</a></li>
+                  <li><a href="#"><i class="fa fa-caret-right"></i>Store Directory</a></li>
+                  <li><a href="#"><i class="fa fa-caret-right"></i>Events & Promotions</a></li>
+                  <li><a href="#"><i class="fa fa-caret-right"></i>Dining</a></li>
+                  <li><a href="#"><i class="fa fa-caret-right"></i>Entertainment</a></li>
+                  <li><a href="#"><i class="fa fa-caret-right"></i>Visitor Info</a></li>
+                  <li><a href="#"><i class="fa fa-caret-right"></i>Contact</a></li>
+                  <li><a href="#"><i class="fa fa-caret-right"></i>Careers</a></li>
+                  <li><a href="#"><i class="fa fa-caret-right"></i>Privacy Policy</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+              <div class="footer-wrapper mb-30">
+                <h4 class="footer-text">Latest Events</h4>
+                <ul class="footers">
+                  <li>
+                    <div class="footer-img">
+                      <a href="#"><img src="./assets/slide1.jpg" alt="Event 1" /></a>
+                    </div>
+                    <div class="footer-info">
+                      <h4><a href="#">Summer Fashion Show</a></h4>
+                      <span>June 25th, 2023</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="footer-img">
+                      <a href="#"><img src="./assets/slide2.jpg" alt="Event 2" /></a>
+                    </div>
+                    <div class="footer-info">
+                      <h4><a href="#">Holiday Season Sale</a></h4>
+                      <span>December 1st, 2023</span>
+                    </div>
+                  </li>
+                </ul>                 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bootom-area pt-40 mt-40">
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div class="copyright">
+              <p>Copyright © 2023 Premier Mall. All rights reserved.</p>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <ul class="footer-bottom-link">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Site Map</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer> 
+</section>
+
+ 
+
+
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

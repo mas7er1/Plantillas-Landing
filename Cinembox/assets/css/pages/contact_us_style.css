@@ -1,0 +1,100 @@
+
+/**  01.  breadcrumb area  **/
+
+.cc-breadcrumb {
+    display: block;
+    padding-bottom: 150px;
+}
+
+.cc-breadcrumb .breadcrumb-img {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+.cc-breadcrumb .breadcrumb-title h3 {
+    text-align: center;
+    padding: 130px 0;
+}
+
+/**  01.  end breadcrumb area  **/
+
+
+/**  02.  contact us area  **/
+
+.cc-contact-us-area {
+    margin-bottom: 150px;
+}
+
+.contact-us-section h4 {
+    margin-bottom: 30px;
+}
+
+.contact-us-section input {
+    height: 47px;
+    width: 100%;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #666666;
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.contact-us-section textarea {
+    height: 157px;
+    width: 100%;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #666666;
+    margin-bottom: 15px;
+    padding: 20px 20px;
+}
+
+.contact-us-section button {
+    color: #000;
+    width: 100%;
+    background-color: #fff;
+}
+
+.contact-us-description{
+    margin-left: 40px;
+}
+
+.contact-us-title h4 {
+    margin-bottom: 20px;
+}
+
+.contact-us-title ul {
+    margin: 0;
+    padding: 0;
+}
+
+.contact-us-title ul li {
+    list-style: none;
+}
+
+.contact-us-title ul li a {
+    color: #cccccc;
+    line-height: 35px;
+}
+
+.contact-us-title-2 h4 {
+    margin-top: 60px;
+}
+
+/**  02.  end contact us area  **/
+
+
+/**  03.  contact map area  **/
+
+.cc-contact-map{
+    margin-bottom: 150px;
+}
+
+.cc-contact-map iframe{
+    width: 100%;
+}
+
+/**  03.  contact map area  **/

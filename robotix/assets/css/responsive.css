@@ -1,0 +1,109 @@
+/*RESPONSIVE DEVICE MEDIA 1400PX*/
+@media (min-width: 1400px){
+	.container {
+		
+	}
+
+}
+
+/*RESPONSIVE DEVICE MEDIA 1200PX*/
+@media (max-width: 1200px){
+	.navigation ul li {
+		padding: 10px 8px;
+	}
+}
+
+/*RESPONSIVE DEVICE MEDIA 991PX*/
+@media (max-width: 991px)  {
+	.about-content{
+		padding-top: 90px;
+	}
+	.counter-title{
+		padding-bottom: 50px;
+	}
+	.counter,
+	.single-pricing,
+	.single-team,
+	.contact-info-area{
+		margin-bottom: 30px;
+	}
+	.contact-form{
+		margin-left: 0;
+	}
+
+
+}
+
+/*RESPONSIVE DEVICE MEDIA 768PX*/
+
+@media only screen and (max-width:782px) { 
+	.navigation ul li a {
+
+		font-size: 15px;
+	}
+}
+@media only screen and (max-width:768px) { 
+
+}
+
+
+@media only screen and (max-width: 767px){
+	.navigation{
+		display: none!important;
+	}
+	#mobile_menu{
+		display: block;
+	}
+	.slider-content{
+		padding-right: 0;
+	}
+}
+
+/*RESPONSIVE DEVICE MEDIA 575PX*/
+@media (max-width: 575px)  {
+
+}
+/*RESPONSIVE DEVICE MEDIA 480PX*/
+@media (max-width: 480px)  {
+	.about-content li {
+		width: 100%;
+		float: left;
+		margin-bottom: 23px;
+	}
+	
+	.review-slider .slick-dots{
+		display: none!important;
+	}
+	.rev_img{
+		display: none;
+	}
+	.single-review,
+	.home-2 .single-review	{
+		width: auto;
+		transform: translateX(0px)!important;
+		margin-left: 0;
+	}
+	.progress-wrap{
+		display: none;
+	}
+
+	
+}
+
+@media (max-width: 600px)  {
+
+}
+/*RESPONSIVE DEVICE MEDIA 414PX*/
+@media (max-width: 575px)  {
+
+	
+}
+
+
+/*RESPONSIVE DEVICE MEDIA 360PX*/
+@media (max-width: 360px)  {
+
+	
+}
+
+

@@ -1,0 +1,160 @@
+/* ===== extra small device start ===== */
+
+@media(max-width:575px) {
+    .sidebar-wrapper .sidebar-content .sidebar_menu ul li {
+        padding: 4px 0;
+    }
+    .sidebar-wrapper .sidebar_footer {
+        bottom: 15px;
+    }
+    .sidebar-wrapper .sidebar_footer p {
+        display: none;
+    }
+    #show-sidebar {
+        top: 100px;
+    }
+    #close-sidebar {
+        top: 100px;
+    }
+    .sidebar-wrapper .sidebar_footer p.copyright {
+        display: block !important;
+    }
+    .sidebar-wrapper .sidebar-content .logo {
+        top: 15px;
+    }
+    .page-wrapper .page-content #banner .banner_content {
+        width: 100%;
+    }
+    .page-wrapper .page-content #banner .banner_content h1 {
+        font-size: 35px;
+        padding-bottom: 10px;
+        line-height: 50px;
+    }
+    .page-wrapper .page-content #banner .banner_content .cd-headline {
+        font-size: 16px;
+        padding-bottom: 20px;
+    }
+    .page-wrapper .page-content #about .about_content .about_address .about_address_items {
+        margin-bottom: 15px;
+    }
+    .page-wrapper .page-content #counter {
+        display: none;
+    }
+    .page-wrapper .page-content #portfolio {
+        border-top: 2px solid #000;
+    }
+    .page-wrapper .page-content #portfolio .portfolio_catagury ul li {
+        line-height: 26px;
+    }
+    .page-wrapper .page-content #portfolio .portfolio_img .port_item:hover .overlay {
+        height: 101%;
+    }
+    .page-wrapper .page-content #news .news_items .news_content a {
+        display: block;
+    }
+    .page-wrapper .page-content #contact .contact_content {
+        margin-bottom: 30px;
+    }
+}
+
+/* ===== extra small device end ===== */
+
+
+/* ===== small device start ===== */
+
+@media(min-width:576px) and (max-width:767px) {
+    .sidebar-wrapper .sidebar-content .sidebar_menu ul li {
+        padding: 4px 0;
+    }
+    .sidebar-wrapper .sidebar_footer {
+        bottom: 15px;
+    }
+    .sidebar-wrapper .sidebar_footer p {
+        display: none !important;
+    }
+    .sidebar-wrapper .sidebar_footer p.copyright {
+        display: block !important;
+    }
+    .sidebar-wrapper .sidebar-content .logo {
+        top: 15px;
+    }
+    .page-wrapper .page-content #banner .banner_content {
+        width: 100%;
+    }
+    .page-wrapper .page-content #banner .banner_content h1 {
+        padding-top: 0;
+        padding-bottom: 0;
+        line-height: 55px;
+    }
+    .page-wrapper .page-content #about .about_content .about_address .about_address_items {
+        margin-bottom: 15px;
+    }
+    .page-wrapper .page-content #services .services_content .service_items .icon_heading .heading h4 {
+        font-size: 18px;
+    }
+    .page-wrapper .page-content #counter {
+        display: none;
+    }
+    .page-wrapper .page-content #portfolio {
+        border-top: 2px solid #000;
+    }
+    .page-wrapper .page-content #portfolio .portfolio_catagury ul li {
+        line-height: 26px;
+    }
+    .page-wrapper .page-content #portfolio .portfolio_img .port_item:hover .overlay {
+        height: 101%;
+    }
+    .page-wrapper .page-content #news .news_items .news_content a {
+        display: block;
+    }
+    .page-wrapper .page-content #contact .contact_content {
+        margin-bottom: 30px;
+    }
+}
+
+/* ===== small device end ===== */
+
+
+/* ===== medium device start ===== */
+
+@media(min-width:768px) and (max-width:991px) {
+    .page-wrapper .page-content #banner .banner_content h1 {
+        padding-top: 0;
+        padding-bottom: 0;
+        line-height: 55px;
+    }
+    .page-wrapper .page-content #about .about_content .about_address {
+        padding-bottom: 30px;
+    }
+    .page-wrapper .page-content #counter {
+        display: none;
+    }
+    .page-wrapper .page-content #portfolio {
+        border-top: 2px solid #000;
+    }
+    .page-wrapper .page-content #news .news_items a {
+        display: block;
+    }
+    .page-wrapper .page-content #contact .contact_content {
+        margin-bottom: 30px;
+    }
+}
+
+/* ===== medium device end ===== */
+
+
+/* ===== large device start ===== */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .page-wrapper .page-content #services .services_content .service_items h4 {
+        line-height: 26px;
+    }
+    .page-wrapper .page-content #counter .counter_items {
+        padding: 20px;
+    }
+    .page-wrapper .page-content #counter .counter_items h1 {
+        font-size: 35px;
+    }
+}
+
+/* ===== large device end ===== */
