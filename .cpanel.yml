@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+  - export DEPLOYPATH=/home/gpersiacssnmx/public_html/LandingPlantillas/Aroma/HTML
+  - /bin/cp index.html $DEPLOYPATH
