@@ -111,12 +111,13 @@ h3 {
 #header .logo h1 a:hover {
 	color: #222222;
 	text-decoration: none;
+	
 }
 
 #header .logo img {
 	padding: 0px;
 	margin: 6px 0px;
-	max-height: 43px;
+	max-height: 70px;
 }
 
 /*--------------------------------------------------------------
@@ -168,7 +169,7 @@ h3 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-	color: #40759a;
+	color: #88c9f7;
 }
 
 
@@ -323,7 +324,7 @@ h3 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-	color: #d7efff;
+	color: #587f99;
 }
 
 .navbar-mobile .getstarted,
@@ -375,7 +376,7 @@ h3 {
 	width: 100%;
 	height: 100vh;
 	padding-top: 40px;
-	background-image: url(../img/background/hero-bg.png);
+	background-image: url(../img/background/hero-bg.jpeg);
 	background-position: center center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -412,7 +413,7 @@ h3 {
 	color: #5a5a5a;
 	padding-right: 100px;
 	font-size: 28px;
-	color: #00324e;
+	color: #ffffff;
 	line-height: 26px;
 	margin-bottom: 20px;
 	font-family: 'Alegreya Sans SC', sans-serif;
@@ -658,7 +659,7 @@ h3 {
 # About Us
 --------------------------------------------------------------*/
 .about {
-	background-image: url(../img/background/about-bg.png);
+	background-image: url(../img/background/about-bg.jpg);
 	background-position: center center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -694,7 +695,7 @@ h3 {
 
 .about p {
 	font-family: 'Alegreya Sans SC', sans-serif;
-	color: #1e0220;
+	color: #ffffff;
 	font-size: 22px;
 }
 
@@ -759,7 +760,7 @@ h3 {
 
 
 .gallery {
-	background-image: url(../img/background/gallery-bg.png);
+	background-image: url(../img/background/gallery-bg.jpeg);
 	background-position: center center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -838,7 +839,7 @@ h3 {
 # Services
 --------------------------------------------------------------*/
 .services {
-	background-image: url(../img/background/services-bg.png);
+	background-image: url(../img/background/services-bg.jpg);
 	background-position: center center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -950,7 +951,7 @@ h3 {
 --------------------------------------------------------------*/
 .faq {
 
-	background-image: url(../img/background/faq-bg.png);
+	background-image: url(../img/background/faq-bg.jpeg);
 	background-position: center center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -986,7 +987,7 @@ h3 {
 .faq li {
 	padding-bottom: 10px;
 	font-size: 17px;
-	color: #012437;
+	color: #ffffff;
 }
 
 .faq .animated {
@@ -1067,12 +1068,12 @@ details>summary::-webkit-details-marker {
 # Testimonials
 --------------------------------------------------------------*/
 .testimonials {
-	background-position: center center;
+	background-position: center bottom;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
 
-	background-image: url(../img/background/testimonials-bg.png);
+	background-image: url(../img/background/testimonials-bg.jpeg);
 	padding: 100px 0px
 }
 
@@ -1277,7 +1278,7 @@ details>summary::-webkit-details-marker {
 --------------------------------------------------------------*/
 .contact {
 
-	background-image: url(../img/background/contact-bg.png);
+	background-image: url(../img/background/contact-bg.jpeg);
 	background-position: center center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
