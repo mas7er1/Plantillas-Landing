@@ -909,7 +909,7 @@ section {
 .our-services-area {
 	position: relative;
 	z-index: 1;
-	background-image: url(http://via.placeholder.com/1920x1065/000/fff);
+	background-image: url('/electricbox-html/images/service-hover.jpg');
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
