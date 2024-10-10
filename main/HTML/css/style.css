@@ -108,6 +108,7 @@ i,
 span,
 a {
     display: inline-block;
+    color: inherit;
 }
 img {
     width: 100%;
